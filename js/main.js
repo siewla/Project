@@ -31,6 +31,7 @@ $(()=>{
     // const eightHearts = 'https://deckofcardsapi.com/static/img/8H.png';
     // const fiveDiamonds = 'https://deckofcardsapi.com/static/img/5D.png';
     // const tenSpades = 'https://deckofcardsapi.com/static/img/0S.png';
+    
     let currentIndex=0;
     const $levelButtons = $('.level-button');
 
