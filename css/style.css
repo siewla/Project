@@ -101,17 +101,24 @@
     border: 1px solid black;
   }
 
-  h1{
-    max-width: 300px;
-    font-size: 18px;
+  #level-2-form{
+    position: relative;
+    top:250px;
+  }
+  
+
+  .level2-img {
+    max-height: 100px;
+    position: absolute;
   }
 
-  #tips{
-    max-width: 50px;
+  .level-3-container{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
   }
 
-
-  #level-2 {
+  #level-3 {
     padding:20px;
     display: flex;
     flex-direction: row;
@@ -120,7 +127,7 @@
     align-items: center;
   }
 
-  .level-img{
+  .level3-img {
     max-height: 100px;
   }
 
@@ -128,3 +135,24 @@
     margin-top: 50px;
     max-height: 100px;
   }
+
+  .level-title{
+    max-width: 300px;
+    font-size: 18px;
+  }
+
+  .side-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  #tips{
+    max-width: 50px;
+  }
+
+  #reset-level{
+    max-width: 50px;
+    margin-top: 50px;
+  }
+

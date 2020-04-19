@@ -34,10 +34,14 @@ $(()=>{
     
     let currentIndex=0;
     const $levelButtons = $('.level-button');
+    
+    for (let i=2;i<=4;i++){
+        $(`.level-${i}`).css('display','none');
+    }
 
-    $('.level-2').css('display','none');
+
     // for (let i=0; i<$levelButtons.length; i++){
-    for (let i=0; i<2; i++){
+    for (let i=0; i<3; i++){
         $levelButtons.eq(i).on('click', function (){
             let currentLevel=currentIndex+1;
             const current='level-'+currentLevel;
@@ -60,6 +64,24 @@ $(()=>{
             }
         });
     }
+    $( function () {
+        $('.level2-img').draggable({
+            containment: '.level-2-container'
+        });
+    } );
+
+
+    $('#level2-submit').on('click', function (){
+        let answer = $('#number-of-cards').val();
+        console.log(answer);
+        if (answer === '6'){
+            alert ('Congratulations. You are correct.');
+        } else {
+            alert ('Please try again');
+        }
+    });
+
+
 
     $('#tips').on('click',function (){
         switch(currentIndex){
@@ -67,10 +89,29 @@ $(()=>{
             alert('Tips: Biggest Value in the Deck');
             break;
         case 1: 
-            alert('Tips: Everything');               
+            alert('Tips: We are hiding!');               
+            break;
+        case 2: 
+            alert('Tips: Everything :)');               
             break;
         default:
 
+        }
+    });
+
+    $('#reset-level').on('click', function (){
+        switch(currentIndex){
+        case 0:
+            alert('Tips: Biggest Value in the Deck');
+            break;
+        case 1: 
+            $('.level2-img').removeAttr('style');                   
+            break;
+        case 2: 
+            //$('.level2-img').css('position','absolute');            
+            break;
+        default:
+        
         }
     });
  

@@ -10,6 +10,10 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
     </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -37,7 +41,7 @@
         </div>
         <div class ="game">   
             <div class="level-1">
-                <h1>Level 1 - Click the largest Card</h1>
+                <h3 class="level-title">Level 1 - Click the largest Card</h3>
                 <div class = "level-1-container">
                     <div id = level-1>
                         <img src="https://deckofcardsapi.com/static/img/3C.png" id="C">
@@ -48,19 +52,37 @@
                 </div>
             </div>
             <div class ="level-2">
-                <h1 id ="drag-item">Level 2 - Put everything inside the box</h1>
+                <h3 class="level-title">Level 2 - How many cards?</h3>
                 <div class = "level-2-container">
                     <div id = level-2>
-                        <img src="https://deckofcardsapi.com/static/img/4C.png" class="level-img" id="drag-item">
-                        <img src="https://deckofcardsapi.com/static/img/9H.png" class="level-img" id="drag-item">
-                        <img src="https://deckofcardsapi.com/static/img/2S.png" class="level-img" id="drag-item">
+                        <img src="https://deckofcardsapi.com/static/img/4C.png" class="level2-img">
+                        <img src="https://deckofcardsapi.com/static/img/9H.png" class="level2-img">
+                        <img src="https://deckofcardsapi.com/static/img/QS.png" class="level2-img">
+                        <img src="https://deckofcardsapi.com/static/img/KC.png" class="level2-img">
+                        <img src="https://deckofcardsapi.com/static/img/0H.png" class="level2-img">
+                        <img src="https://deckofcardsapi.com/static/img/2S.png" class="level2-img">
+                    </div>
+                    <form id ="level-2-form">
+                        <input type="text" id="number-of-cards" placeholder="# of Cards">
+                        <button type="submit" class="btn btn-primary boroughs" id="level2-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class ="level-3">
+                <h3 class="level-title">Level 3 - Put everything inside the box</h3>
+                <div class = "level-3-container">
+                    <div id = level-3>
+                        <img src="https://deckofcardsapi.com/static/img/4C.png" class="level3-img" >
+                        <img src="https://deckofcardsapi.com/static/img/9H.png" class="level3-img" >
+                        <img src="https://deckofcardsapi.com/static/img/2S.png" class="level3-img" >
                         <img src="img/box.png" class ="box" id="dragzone">
                     </div>
                 </div>
             </div>
         </div>
-        <div class ="tips">
+        <div class ="side-buttons">
             <img src ="img/tips.png" id="tips">
+            <img src ="img/reset.png" id="reset-level">
         </div>
     </div>
    
