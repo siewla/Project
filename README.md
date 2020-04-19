@@ -4,7 +4,7 @@ Brain Out - Cards
     b) CSS
     c) Vanilla Javascript 
 2. Wireframe design
-![wireframe](https://github.com/siewla/Project/blob/master/ProjectOne/img/wireframe.png)
+![wireframe](https://github.com/siewla/brainout-cards/blob/master/img/wireframe.png)
 3. APIs used
 4. Approaches
 5. Game Instructions
