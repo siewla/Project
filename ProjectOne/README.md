@@ -4,8 +4,8 @@ Brain Out - Cards
     b) CSS
     c) Vanilla Javascript 
 2. Wireframe design
-
-
+![wireframe](/img/wireframe.png)
+Format: ![Alt Text](url)
 3. APIs used
  
 4. Approaches
