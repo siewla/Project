@@ -4,6 +4,7 @@
 * CSS
 * Javascript 
 * Jquery
+* Jquery UI
 * Ajax
 
 ### Wireframe design
