@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brains Out - Cards</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="header">
@@ -14,27 +20,49 @@
           <a href="#about">About</a>
         </div>
     </div>
+    <marquee class="GeneratedMarquee" direction="left" scrollamount="3" behavior="alternate">Have Fun! Tips are available.</marquee>
     <div class ="main">
         <div class ="level">
             <div id="level-title">Level</div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>10</button>
+            <button class=level-button>1</button>
+            <button class=level-button>2</button>
+            <button class=level-button>3</button>
+            <button class=level-button>4</button>
+            <button class=level-button>5</button>
+            <button class=level-button>6</button>
+            <button class=level-button>7</button>
+            <button class=level-button>8</button>
+            <button class=level-button>9</button>
+            <button class=level-button>10</button>  
         </div>
-        <div class ="game">
-            <div class ="level-container" id="level-1">
-                <h1>Level 1</h1>
-                <div>This is inside Level 1</div>
+        <div class ="game">   
+            <div class="level-1">
+                <h1>Level 1 - Click the largest Card</h1>
+                <div class = "level-1-container">
+                    <div id = level-1>
+                        <img src="https://deckofcardsapi.com/static/img/3C.png" id="C">
+                        <img src="https://deckofcardsapi.com/static/img/8H.png" id="H">
+                        <img src="https://deckofcardsapi.com/static/img/0S.png" id="S">
+                        <img src="https://deckofcardsapi.com/static/img/5D.png" id="D"> 
+                    </div>
+                </div>
+            </div>
+            <div class ="level-2">
+                <h1 id ="drag-item">Level 2 - Put everything inside the box</h1>
+                <div class = "level-2-container">
+                    <div id = level-2>
+                        <img src="https://deckofcardsapi.com/static/img/4C.png" class="level-img" id="drag-item">
+                        <img src="https://deckofcardsapi.com/static/img/9H.png" class="level-img" id="drag-item">
+                        <img src="https://deckofcardsapi.com/static/img/2S.png" class="level-img" id="drag-item">
+                        <img src="img/box.png" class ="box" id="dragzone">
+                    </div>
+                </div>
             </div>
         </div>
+        <div class ="tips">
+            <img src ="img/tips.png" id="tips">
+        </div>
     </div>
-
+   
 </body>
 </html>
