@@ -149,7 +149,7 @@ $(()=>{
     $('#level4-submit').on('click', function (e){
         e.preventDefault();
         let answer = $('#card-code').val();
-        if (answer === 'qd' || answer === 'QD' || answer === 'Queen Diamonds' || answer === 'Diamonds Queen'){
+        if (answer === '9'){
             $levelButtons.eq(4).prop('disabled',false);
             alert ('Congratulations. You are correct.');
         } else {
