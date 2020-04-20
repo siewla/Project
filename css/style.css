@@ -1,3 +1,13 @@
+@font-face{
+  font-family: 'headliner45';
+  src: url('/fonts/HeadlinerNo45-59y8.ttf');
+}
+@font-face{
+  font-family: 'weeping';
+  src: url('/fonts/Weeping Willow Regular.otf');
+}
+
+
 .GeneratedMarquee {
   display: block;
   margin: 0 auto;
@@ -54,6 +64,7 @@
       flex-direction:row;
       justify-content: center;
   }
+
 
   .level{
       padding:20px;
@@ -133,7 +144,11 @@
 
   .level-title{
     max-width: 300px;
-    font-size: 18px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'weeping';
+    letter-spacing: 1px;
   }
 
   .side-buttons{
@@ -154,4 +169,16 @@
   footer{
     margin-top: 50px;
     text-align: center;
+  }
+
+  .level > button {
+    background-color: green;
+    cursor: pointer;
+    border-radius: 50%;
+    color:wheat;
+  } 
+  
+  .level > button[disabled=disabled], button:disabled {
+    background-color: #CC3300;  
+    cursor:not-allowed;
   }

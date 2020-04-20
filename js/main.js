@@ -190,6 +190,8 @@ $(()=>{
         case 2: 
             alert('Tips: Everything :)');               
             break;
+        case 3:
+            alert('Tips: click me! don\'t hurt your eyes');
         default:
         }
     });
