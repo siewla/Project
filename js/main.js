@@ -138,7 +138,7 @@ $(()=>{
 
     const level4 = () => {
         $('.level4-img').on('click',function (){
-            $('.level4-img').css('filter','blur(0)');
+            $('.level4-img').css('filter','blur(0.75)');
             let currentWidth = $('.level4-img').width();
             if (currentWidth<=80){
                 $('.level4-img').width(currentWidth*1.05);
@@ -149,7 +149,7 @@ $(()=>{
     $('#level4-submit').on('click', function (e){
         e.preventDefault();
         let answer = $('#card-code').val();
-        if (answer === '9'){
+        if (answer === '10'){
             $levelButtons.eq(4).prop('disabled',false);
             alert ('Congratulations. You are correct.');
         } else {
