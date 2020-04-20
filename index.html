@@ -11,6 +11,8 @@
         crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- to use on mobile -->
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -69,13 +71,25 @@
                 </div>
             </div>
             <div class ="level-3">
-                <h3 class="level-title">Level 3 - Put everything inside the box</h3>
+                <h3 class="level-title level3-img">Level 3 - Put everything inside the box</h3>
                 <div class = "level-3-container">
                     <div id = level-3>
                         <img src="https://deckofcardsapi.com/static/img/4C.png" class="level3-img" >
                         <img src="https://deckofcardsapi.com/static/img/9H.png" class="level3-img" >
                         <img src="https://deckofcardsapi.com/static/img/2S.png" class="level3-img" >
-                        <img src="img/box.png" class ="box" id="dragzone">
+                        <img src="img/box.png" class ="box" id="level3-dragzone">
+                    </div>
+                </div>
+            </div>
+            <div class="level-4">
+                <h3 class="level-title">Level 4 - What is the card display?</h3>
+                <div class = "level-4-container">
+                    <form id ="level-2-form">
+                        <input type="text" id="card-code" placeholder="cardcode">
+                        <button type="submit" class="btn btn-primary boroughs" id="level4-submit">Submit</button>
+                    </form>
+                    <div id = level-4>
+                        <img src="https://deckofcardsapi.com/static/img/QD.png" class="level4-img" >
                     </div>
                 </div>
             </div>
@@ -83,8 +97,14 @@
         <div class ="side-buttons">
             <img src ="img/tips.png" id="tips">
             <img src ="img/reset.png" id="reset-level">
-        </div>
+
+        </div>            
     </div>
-   
+    <footer>
+        <form id>
+            <input type="text" id="cheat-code" placeholder="cheat code">
+            <button type="submit" id="ccButton">ok</button>
+        </form>
+    </footer>
 </body>
 </html>
