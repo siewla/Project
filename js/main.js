@@ -127,7 +127,9 @@ $(()=>{
                 ui.draggable.css('display','none');
                 if (i===4){
                     $levelButtons.eq(3).prop('disabled',false);
-                    displayWinning();
+                    setTimeout(function (){
+                        displayWinning();
+                    } , 200);
                     
                 }
             }
@@ -138,7 +140,7 @@ $(()=>{
 
     const level4 = () => {
         $('.level4-img').on('click',function (){
-            $('.level4-img').css('filter','blur(0.75)');
+            $('.level4-img').css('filter','blur(1px)');
             let currentWidth = $('.level4-img').width();
             if (currentWidth<=80){
                 $('.level4-img').width(currentWidth*1.05);
@@ -159,9 +161,53 @@ $(()=>{
 
     level4();
 
+    
 
-    $('#reset-level').on('click', function (){
-        switch(currentIndex){
+    const allEqual = (arrOne, arrTwo) => {
+        let indexTrue = 0;
+        for (let i =0; i < arrOne.length; i++) {
+            if (arrOne[i]===arrTwo[i]){
+                indexTrue++;
+                if (indexTrue===arrOne.length){
+                    return true;
+                }
+            } else{
+                return false; 
+            }
+        }
+    };
+  
+
+    const level5 = () => {
+        let idArray = [];
+        const correctArray = ['level5-3', 'level5-2', 'level5-1', 'level5-7', 'level5-9', 'level5-8'];
+        let $levelFiveimgs = $('.level5-img');
+        for (let i=0; i<$levelFiveimgs.length; i++){
+            $levelFiveimgs.eq(i).on('click',function (event){
+                event.preventDefault();
+                $levelFiveimgs.eq(i).unbind('click');
+                $levelFiveimgs.eq(i).css('opacity','0.6');
+                let id = $levelFiveimgs.eq(i)[0].id;
+                idArray.push(id); 
+                if (idArray.length === 6){
+                    let checkArray = allEqual(correctArray,idArray);
+                    if (checkArray){
+                        $levelButtons.eq(5).prop('disabled',false);
+                        alert('Congratulations. You read instructions well.');
+                    } else {
+                        alert('Please try again');
+                        resetLevel(4);
+                    }
+                }
+            });
+        }
+    };
+
+    level5();
+
+
+    const resetLevel = (levelIndex) => {
+        switch(levelIndex){
         case 0:
             break;
         case 1: 
@@ -174,10 +220,21 @@ $(()=>{
             break;
         case 3:
             $('.level4-img').width(20);
+            $('.level4-img').css('filter','blur(2px)');
+            break;
+        case 4:
+            $('.level5-img').css('opacity','1');
+            level5();
+            break;
         default:
         
         }
+    };
+
+    $('#reset-level').on('click', function (e){
+        resetLevel(currentIndex);
     });
+
 
     $('#tips').on('click', function (){
         switch(currentIndex){
@@ -192,6 +249,12 @@ $(()=>{
             break;
         case 3:
             alert('Tips: click me! don\'t hurt your eyes');
+            break;
+        case 4:
+            alert('There are only 2 rows involved.');
+            break;
+        case 5:
+            alert('We are stackable');
         default:
         }
     });

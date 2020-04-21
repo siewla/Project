@@ -7,10 +7,13 @@
   src: url('/fonts/Weeping Willow Regular.otf');
 }
 
+.title-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .GeneratedMarquee {
-  display: block;
-  margin: 0 auto;
   width:400px;
   font-family:fantasy;
   font-size:2em;
@@ -19,61 +22,29 @@
   color:#CC3300;
   background-color:#FFFFFF;
   padding:1em;
-  }
-
-.header {
-    overflow: hidden;
-    background-color: #f1f1f1;
-    padding: 20px 10px;
-  }
-  
-  .header a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-  }
-  
-  .header img {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .header a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .header a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
-  
-  .header-nav {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-  }
-
-  .main{
-      display: flex;
-      flex-direction:row;
-      justify-content: center;
-  }
+}
 
 
-  .level{
-      padding:20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-  }
+  
+/* .header img {
+  display: block;
+  margin: 0 auto;
+} */
 
-  .level-1-container, .level-2-container, .level-3-container, .level-4-container{
+.main{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.level{
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+  .level-1-container, .level-2-container, .level-3-container, .level-4-container, .level-5-container, .level-6-container{
       height: 300px;
       width: 300px;
       border: 1px solid black;
@@ -140,9 +111,36 @@
     margin-right: auto;
     margin-top: 50px;
     width:10px;
-    filter: blur(1px);
+    filter: blur(2px);
   }
 
+  #level-5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .level5-img {
+    margin: 10px;
+    max-height: 80px;
+    border: 1px solid black
+  }
+
+  #level-6 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .level6-img {
+    margin: 10px;
+    max-height: 120px;
+    border: 1px solid black
+  }
   .level-title{
     max-width: 300px;
     font-size: 25px;
