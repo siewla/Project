@@ -1,4 +1,4 @@
-$(()=>{
+const level2 = () => {
     $( function () {
         $('.level2-img').draggable({
             containment: '.level-2-container'
@@ -6,7 +6,6 @@ $(()=>{
     });
 
     $('#level2-submit').on('click', function (e){
-        activateResetButton();
         e.preventDefault();
         const answer = $('#number-of-cards').val();
         if (answer === '6'){
@@ -16,4 +15,4 @@ $(()=>{
             alert ('Please try again');
         }
     });
-});
+};

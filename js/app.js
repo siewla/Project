@@ -49,7 +49,7 @@ const resetLevel = (levelIndex) => {
     case 2: 
         $('.level3-img').css('display','block');
         $('.level3-img').css({ 'top':'', 'left':'' });             
-        itemInsidebox=0;
+        level3();
         break;
     case 3:
         $('.level4-img').width(10);
@@ -57,6 +57,17 @@ const resetLevel = (levelIndex) => {
         break;
     case 4:
         $('.level5-img').css('opacity','1');
+        level5();
+        break;
+    case 5:
+        $('.level6-img').css({ 'top':'', 'left':'' });
+        $('.level6-img').draggable({ disabled: false });
+        level6();
+        break;
+    case 6:
+        $('.level7-img').unbind('dblclick');
+        $('.level7-img').css('display','block');
+        level7();
         break;
     default:
     
@@ -64,8 +75,19 @@ const resetLevel = (levelIndex) => {
 };
 
 
-
 $(()=>{
+    level1();
+    level2();
+    level3();
+    level4();
+    level5();
+    level6();
+    level7();
+    // level8();
+    // level9();
+    // level10();
+    activateResetButton();
+
     for (let i=2;i<=10;i++){
         $(`.level-${i}`).css('display','none');
     }
@@ -79,9 +101,6 @@ $(()=>{
             currentIndex=i;
         });
     }
-
-    
-
 });
 
 

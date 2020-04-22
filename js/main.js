@@ -78,6 +78,8 @@ $(()=>{
         case 5:
             alert('We are stackable');
             break;
+        case 6:
+            alert('Kick out your enemy.');
         default:
         }
     });
