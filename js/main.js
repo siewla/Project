@@ -80,6 +80,7 @@ $(()=>{
             break;
         case 6:
             alert('Kick out your enemy.');
+            break;
         default:
         }
     });
