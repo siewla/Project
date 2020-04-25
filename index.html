@@ -19,7 +19,10 @@
     
     <script src="js/app.js"></script>
     <script src="js/createGameLevel.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/tipsdescription.js"></script>
+    <script src="js/tips.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/level_0.js"></script>
     <script src="js/level_1.js"></script>
     <script src="js/level_2.js"></script>
     <script src="js/level_3.js"></script>
@@ -34,7 +37,17 @@
 <body>
     <div class="title-header">
         <img src="img/logo.png" alt="logo" height="100" width="100">
-        <marquee class="GeneratedMarquee" direction="left" scrollamount="3" behavior="alternate">Have Fun!</marquee>
+        <marquee class="GeneratedMarquee" direction="left" scrollamount="2" behavior="alternate">Have Fun!</marquee>
+        <div class = "tips-main">
+            <h2 id="tips-title">Remaining Tips</h2>
+            <div class="tips-container">    
+                <img src ="img/tips.png" class="tips">
+                <img src ="img/tips.png" class="tips">
+                <img src ="img/tips.png" class="tips">
+                <img src ="img/tips.png" class="tips">
+                <img src ="img/tips.png" class="tips">
+            </div>
+        </div>
     </div>
     <div class ="main">
         <div class ="level">
@@ -51,34 +64,16 @@
             <button class=level-button>10</button>  
         </div>
     <div class ="game">   
-            <div class="level-1">
-                <h3 class="level-title">Level 1 : Click the largest Card</h3>
-                <div class = "level-1-container">
-                    <div id = level-1>
-                        <img src="https://deckofcardsapi.com/static/img/3C.png" id="C">
-                        <img src="https://deckofcardsapi.com/static/img/8H.png" id="H">
-                        <img src="https://deckofcardsapi.com/static/img/0S.png" id="S">
-                        <img src="https://deckofcardsapi.com/static/img/5D.png" id="D"> 
-                    </div>
+        <div class ="level-container">
+            <div class = "level-0">
+                <h1 id = "start-game-title">Brain Out - Cards</h1>
+                <h2 id = "start-game-instruction">Click <span id ="correct-start">here</span> to start Game</h2>
+                <div class = "start">
+                    <button id ="start-game">Start</button>
                 </div>
             </div>
-            <div class ="level-2">
-                <h3 class="level-title">Level 2 : How many cards?</h3>
-                <div class = "level-2-container">
-                    <div id = level-2>
-                        <img src="https://deckofcardsapi.com/static/img/4C.png" class="level2-img">
-                        <img src="https://deckofcardsapi.com/static/img/9H.png" class="level2-img">
-                        <img src="https://deckofcardsapi.com/static/img/QS.png" class="level2-img">
-                        <img src="https://deckofcardsapi.com/static/img/KC.png" class="level2-img">
-                        <img src="https://deckofcardsapi.com/static/img/0H.png" class="level2-img">
-                        <img src="https://deckofcardsapi.com/static/img/2S.png" class="level2-img">
-                    </div>
-                    <form id ="level-2-form">
-                        <input type="text" id="number-of-cards" placeholder="# of Cards">
-                        <button type="submit" class="btn btn-primary boroughs" id="level2-submit">Submit</button>
-                    </form>
-                </div>
-            </div>
+        </div>
+            <!--
             <div class ="level-3">
                 <h3 class="level-title level3-img">Level 3 : Put everything inside the box</h3>
                 <div class = "level-3-container">
@@ -165,15 +160,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class ="side-buttons">
-        <img src ="img/tips.png" id="tips">
         <img src ="img/reset.png" id="reset-level">
     </div>   
-        
-   
-
     </div>
     <footer>
         <form id>

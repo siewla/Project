@@ -1,9 +1,15 @@
 const level6 =() => {
+    createGameLevel(6,'Level 6 - What is the biggest value deck?');
+    const cardArray =cardsRandom(4);
+    $('<img>').attr({ src: `${getImgURL(cardArray[0])}` }).addClass('level6-dropzone').appendTo('#level-6');
+    for (let i =1; i<cardArray.length;i++){
+        $('<img>').attr({ src: `${getImgURL(cardArray[i])}` }).addClass('level6-img').appendTo('#level-6');
+    }
     let offsetImg =0;
     let zIndex=2;
     let stackedCard= 0;
     $('.level6-img').draggable({
-        containment: '.level-6-container'
+        containment: '.level-container'
     });
 
     $('.level6-dropzone').droppable({

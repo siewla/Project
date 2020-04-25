@@ -6,5 +6,5 @@ const createGameLevel = (level,levelDescription) => {
     $mainLeveldiv.addClass(`level-${level}`).appendTo($('.game'));
     $levelTitle.text(levelDescription);
     $levelTitle.addClass('level-title').appendTo($mainLeveldiv);
-    $levelContainer.addClass(`level-${level}-container`).attr('id',`level-${level}`).appendTo($mainLeveldiv);
+    $levelContainer.addClass('level-container').attr('id',`level-${level}`).appendTo($mainLeveldiv);
 };

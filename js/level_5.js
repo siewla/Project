@@ -1,24 +1,54 @@
 const level5 = () => {
-    let idArray = [];
-    const correctArray = ['level5-3', 'level5-2', 'level5-1', 'level5-7', 'level5-9', 'level5-8'];
-    let $levelFiveimgs = $('.level5-img');
-    for (let i=0; i<$levelFiveimgs.length; i++){
-        $levelFiveimgs.eq(i).on('click',function (event){
-            event.preventDefault();
-            $levelFiveimgs.eq(i).unbind('click');
-            $levelFiveimgs.eq(i).css('opacity','0.6');
-            let id = $levelFiveimgs.eq(i)[0].id;
-            idArray.push(id); 
-            if (idArray.length === 6){
-                let checkArray = allEqual(correctArray,idArray);
-                if (checkArray){
+    createGameLevel(5,'Level 5 - Submit card 5');
+    const cardArray =cardsRandom(9);
+    for (let i =0; i<cardArray.length;i++){
+        $('<img>').attr({ src: `${getImgURL(cardArray[i])}`, id: `index-${cardArray[i]}` }).addClass('level5-img').appendTo('#level-5');
+    }
+    $('.level-title').text(`Level 5 - Submit card ${getImgCardcode(cardArray[4])}`);
+    let count = 0;
+    for (let i=0; i<$('.level5-img').length; i++){
+        $('.level5-img').eq(i).on('dblclick',function (event){
+            let imgid = $('.level5-img').eq(i)[0].id;
+            if (imgid!==`index-${cardArray[4]}`){
+                $(this).css('display','none');
+                count++;
+            } 
+            
+            if (count == 8){
+                setTimeout(function (){
+                    alert ('You are genius.');
+                } , 200);
+                setTimeout(function (){
                     changeLevel(5,6);
-                    alert('Congratulations. You read instructions well.');
-                } else {
-                    alert('Please try again');
-                }
-                resetLevel(4);
+                } , 200);
             }
         });
     }
 };
+
+
+// const level7 = () =>{
+//     let count =0;
+//     //console.log(count);
+//     for (let i=0; i<$('.level7-img').length; i++){
+//         $('.level7-img').eq(i).on('dblclick',function (event){
+//             console.log('clicked');
+//             let imgid = $('.level7-img').eq(i)[0].id;
+//             console.log(imgid);
+//             if (imgid!=='level7-7'){
+//                 $(this).css('display','none');
+//                 count++;
+//             } 
+            
+//             if (count == 8){
+//                 setTimeout(function (){
+//                     alert ('You are genius.');
+//                 } , 200);
+//                 setTimeout(function (){
+//                     changeLevel(7,8);
+//                 } , 200);
+//             }
+//         });
+       
+//     }
+// };
