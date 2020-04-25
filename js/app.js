@@ -1,8 +1,16 @@
 let currentIndex=0;
 
+const displayLevel = (level) => {
+    $(`.level-${level}`).css('display','block');
+};
+
+const displayNoneLevel = (level) => {
+    $(`.level-${level}`).css('display','none');
+};
+
 const changeDisplayLevel = (fromCurrentLevel, changeToLevel) =>{
-    $(`.level-${fromCurrentLevel}`).css('display','none');
-    $(`.level-${changeToLevel}`).css('display','block');
+    displayNoneLevel(fromCurrentLevel);
+    displayLevel(changeToLevel);
 };
 
 const activateLevelButton = (levelIndex) =>{
@@ -83,9 +91,9 @@ $(()=>{
     level5();
     level6();
     level7();
-    // level8();
-    // level9();
-    // level10();
+    level8();
+    level9();
+    level10();
     activateResetButton();
 
     for (let i=2;i<=10;i++){

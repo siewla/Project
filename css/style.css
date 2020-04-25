@@ -37,7 +37,7 @@
   justify-content: space-evenly;
 }
 
-  .level-1-container, .level-2-container, .level-3-container, .level-4-container, .level-5-container, .level-6-container, .level-7-container, .level-8-container{
+  .level-1-container, .level-2-container, .level-3-container, .level-4-container, .level-5-container, .level-6-container, .level-7-container, .level-8-container, .level-9-container, .level-10-container{
       height: 300px;
       width: 300px;
       border: 1px solid black;
@@ -195,3 +195,5 @@
     background-color: #CC3300;  
     cursor:not-allowed;
   }
+
+  

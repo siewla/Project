@@ -1,6 +1,6 @@
 const level7 = () =>{
     let count =0;
-    console.log(count);
+    //console.log(count);
     for (let i=0; i<$('.level7-img').length; i++){
         $('.level7-img').eq(i).on('dblclick',function (event){
             console.log('clicked');
