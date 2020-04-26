@@ -1,9 +1,12 @@
 const level8 = () => {
     createGameLevel(8,'Level 8: Win this Game. (Blackjack)'); 
-    $('<h3>').attr('id','deck-title').text('Your Deck').appendTo('#level-8');
+    
     $('<div>').attr('id','player-deck').appendTo('#level-8');
-    $('<h3>').attr('id','deck-title').text('Computer\'s Deck').appendTo('#level-8');
+    $('<h3>').attr('class','deck-title').text('Your Deck').appendTo('#player-deck');
+   
     $('<div>').attr('id','computer-deck').appendTo('#level-8');
+    $('<h3>').attr('class','deck-title').text('Computer\'s Deck').appendTo('#computer-deck');
+    
     $('<img>').attr({ src: `${getImgURL(12)}` }).addClass('level8-img').appendTo('#player-deck');
     $('<img>').attr({ src: `${getImgURL(4)}` }).addClass('level8-img').appendTo('#player-deck');
     $('<img>').attr({ src: `${getImgURL(11)}` }).addClass('level8-img').appendTo('#computer-deck');
