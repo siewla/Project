@@ -34,6 +34,7 @@ $(()=>{
                 alert('Just move around inside the container, you will find us, total 6 of us.');
                 break;
             case 10:
+                alert('The card is overflown but it can move around.');
                 break;
             default:
             }

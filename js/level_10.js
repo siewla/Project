@@ -1,8 +1,55 @@
 const level10 = () => {
-    createGameLevel(10,'');
-    // const cardArray =cardsRandom(9);
-    // for (let i =0; i<cardArray.length;i++){
-    //     $('<img>').attr({ src: `${getImgURL(cardArray[i])}` , id:`level-ten-img` }).addClass('level10-img').appendTo('#level-10');
-    // }
-    // $('<div>Level 10 : Rearrange the cards. I know you can figure it <span class="level10-out">out</span>!</div>').appendTo('.level-title');
+    createGameLevel(10,'Level 10 : What is the card code?');
+    const cardArray =cardsRandom(1);
+    const cardCode =[];
+    $('<div>').attr('id','inner').appendTo('#level-10');
+    for (let i =0; i<cardArray.length;i++){
+        $('<img>').attr({ src: `${getImgURL(cardArray[i])}` }).addClass('level10-img').appendTo('#inner');
+        cardCode.push(getImgCardcode(cardArray[i]));
+    }
+
+    $('<form>').attr('id','level-10-form').appendTo('#level-10');
+    $('<input type="text" id="cardcode10" placeholder="eg. AS 2D 0C KH">').appendTo($('#level-10-form'));
+    $('<button type="submit" class="btn btn-primary boroughs" id="level10-submit">Submit</button>').appendTo($('#level-10-form'));
+
+    
+    let clicking = false;
+    let previousX;
+    let previousY;
+
+    $('#inner').mousedown(function (e){
+        e.preventDefault();
+        previousX = e.clientX;
+        previousY = e.clientY;
+        clicking = true;
+    });
+
+    $(document).mouseup(function (){
+        clicking = false;
+    });
+
+    $('#inner').mousemove(function (e) {
+        if (clicking){
+            e.preventDefault();
+            $('#inner').scrollLeft($('#inner').scrollLeft() + (previousX - e.clientX));
+            $('#inner').scrollTop($('#inner').scrollTop() + (previousY - e.clientY));
+            previousX = e.clientX;
+            previousY = e.clientY;
+        }
+    });
+
+    $('#inner').mouseleave(function () {
+        clicking = false;
+    });
+
+    $('#level10-submit').on('click', function (e){
+        e.preventDefault();
+        let answer = $('#cardcode10').val();
+        if (answer === cardCode[0]){
+            alert ('Congratulations. You completed 10 levels.');
+        } else {
+            alert ('Please try again');
+        }
+    });
+
 };
