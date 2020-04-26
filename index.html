@@ -36,8 +36,8 @@
 </head>
 <body>
     <div class="title-header">
-        <img src="img/logo.png" alt="logo" height="100" width="100">
-        <marquee class="GeneratedMarquee" direction="left" scrollamount="2" behavior="alternate">Have Fun!</marquee>
+        <img src="img/logo.png" id="logo">
+        <marquee class="html-marquee" direction="left" behavior="alternate" scrollamount="2" >HAVE FUN!</marquee>
         <div class = "tips-main">
             <h2 id="tips-title">Remaining Tips</h2>
             <div class="tips-container">    
@@ -73,77 +73,6 @@
                 </div>
             </div>
         </div>
-            <!--
-            <div class ="level-3">
-                <h3 class="level-title level3-img">Level 3 : Put everything inside the box</h3>
-                <div class = "level-3-container">
-                    <div id = level-3>
-                        <img src="https://deckofcardsapi.com/static/img/4C.png" class="level3-img" >
-                        <img src="https://deckofcardsapi.com/static/img/9H.png" class="level3-img" >
-                        <img src="https://deckofcardsapi.com/static/img/2S.png" class="level3-img" >
-                        <img src="img/box.png" class ="box" id="level3-dragzone">
-                    </div>
-                </div>
-            </div>
-            <div class="level-4">
-                <h3 class="level-title">Level 4 : What is the number?</h3>
-                <div class = "level-4-container">
-                    <form id ="level-2-form">
-                        <input type="text" id="card-code" placeholder="cardcode">
-                        <button type="submit" class="btn btn-primary boroughs" id="level4-submit">Submit</button>
-                    </form>
-                    <div id = level-4>
-                        <img src="https://deckofcardsapi.com/static/img/0D.png" class="level4-img" >
-                    </div>
-                </div>
-            </div>
-        
-
-        <div class ="level-5">
-            <h3 class="level-title">Level 5 : Click the first row right to left and last row in order.</h3>
-            <div class = "level-5-container">
-                <div id = level-5>
-                    <img src="https://deckofcardsapi.com/static/img/3H.png" id = 'level5-1' class="level5-img">
-                    <img src="https://deckofcardsapi.com/static/img/5C.png" id = 'level5-2' class="level5-img">
-                    <img src="https://deckofcardsapi.com/static/img/7S.png" id = 'level5-3' class="level5-img">
-                    <img src="https://deckofcardsapi.com/static/img/4C.png" id = 'level5-4' class="level5-img">
-                    <img src="https://deckofcardsapi.com/static/img/2D.png" id = 'level5-5' class="level5-img">
-                    <img src="https://deckofcardsapi.com/static/img/5S.png" id = 'level5-6' class="level5-img">
-                    <img src="https://deckofcardsapi.com/static/img/7C.png" id = 'level5-7' class="level5-img">
-                    <img src="https://deckofcardsapi.com/static/img/9H.png" id = 'level5-8' class="level5-img">
-                    <img src="https://deckofcardsapi.com/static/img/8D.png" id = 'level5-9' class="level5-img">
-                </div>
-            </div>
-        </div>
-
-        <div class ="level-6">
-            <h3 class="level-title">Level 6 : What is the biggest value deck?.</h3>
-            <div class = "level-6-container">
-                <div id = level-6>
-                    <img src="https://deckofcardsapi.com/static/img/KH.png" id = 'level6-1' class="level6-dropzone">
-                    <img src="https://deckofcardsapi.com/static/img/QD.png" id = 'level6-2' class="level6-img">
-                    <img src="https://deckofcardsapi.com/static/img/AC.png" id = 'level6-3' class="level6-img">
-                    <img src="https://deckofcardsapi.com/static/img/JS.png" id = 'level6-4' class="level6-img">
-                </div>
-            </div>
-        </div>
-        <div class ="level-7">
-            <h3 class="level-title">Level 7 : Submit number 7.</h3>
-            <div class = "level-7-container">
-                <div id = level-7>
-                    <img src="https://deckofcardsapi.com/static/img/AH.png" id = 'level7-1' class="level7-img">
-                    <img src="https://deckofcardsapi.com/static/img/2C.png" id = 'level7-2' class="level7-img">
-                    <img src="https://deckofcardsapi.com/static/img/3S.png" id = 'level7-3' class="level7-img">
-                    <img src="https://deckofcardsapi.com/static/img/4C.png" id = 'level7-4' class="level7-img">
-                    <img src="https://deckofcardsapi.com/static/img/5D.png" id = 'level7-5' class="level7-img">
-                    <img src="https://deckofcardsapi.com/static/img/6S.png" id = 'level7-6' class="level7-img">
-                    <img src="https://deckofcardsapi.com/static/img/7C.png" id = 'level7-7' class="level7-img">
-                    <img src="https://deckofcardsapi.com/static/img/8H.png" id = 'level7-8' class="level7-img">
-                    <img src="https://deckofcardsapi.com/static/img/9D.png" id = 'level7-9' class="level7-img">
-                </div>
-            </div>
-        </div>
-
         <div class ="level-8">
             <h3 class="level-title">Level 8 : Win the game (Blackjack).</h3>
             <div class = "level-8-container">
@@ -160,13 +89,15 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
     <div class ="side-buttons">
-        <img src ="img/reset.png" id="reset-level">
+        <button id ="reset-level">&#x21BA;</button>
+        <h3 id ="replay">Replay</h3>
     </div>   
     </div>
-    <footer>
+    <footer class ="page-footer">
+        <h3 id="disclaimer">*Disclaimer: This game is working best with landscape view.</h3>
         <form id>
             <input type="text" id="cheat-code" placeholder="cheat code">
             <button type="submit" id="ccButton">ok</button>
