@@ -41,14 +41,14 @@ $(()=>{
         });
     }
 
-    $('#ccButton').on('click', function (e) {
-        e.preventDefault();
-        switch($('#cheat-code').val()){
-        case 'all':
-            $('.level-button').prop('disabled',false);
-            break;
-        default:
-        }
+    // $('#ccButton').on('click', function (e) {
+    //     e.preventDefault();
+    //     switch($('#cheat-code').val()){
+    //     case 'all':
+    //         $('.level-button').prop('disabled',false);
+    //         break;
+    //     default:
+    //     }
 
-    });
+    // });
 });
