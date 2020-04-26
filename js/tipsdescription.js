@@ -28,8 +28,10 @@ $(()=>{
                 alert('Everything :)'); 
                 break;
             case 8:
+                alert('You need to steal and return the card.');
                 break;
             case 9:
+                alert('Just move around inside the container, you will find us, total 6 of us.');
                 break;
             case 10:
                 break;
