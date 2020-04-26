@@ -18,7 +18,8 @@ A gauntlet of card puzzles that involve interactions with cards. Players have to
 ![wireframe](https://github.com/siewla/brainout-cards/blob/master/img/wireframe2.png)
 
 ## API used
- - [Deck of Cards API]([http://deckofcardsapi.com/](http://deckofcardsapi.com/))
+[http://deckofcardsapi.com/](http://deckofcardsapi.com/)
+The API is used to randomly pick the cards from the deck. 
 
 ## Approaches Taken
 My objective is to create a game that is simple but fun. To achieve that i also did some research on games within the scope of the unit 1.
