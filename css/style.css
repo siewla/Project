@@ -130,7 +130,19 @@
   margin-left: 2vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   font-family: 'Luckiest Guy', cursive;
+}
+#toggle-audio{
+  color:wheat;
+  border-radius: 30%;
+  background-color: green;
+  font-size: 4vh;
+  height: 5vh;
+  width: 5vh;
+  line-height: 5vh;
+  margin-bottom: 5vh;
+
 }
 
 #reset-level{
