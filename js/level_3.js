@@ -33,9 +33,10 @@ const level3 =() => {
                     changeLevel(3,4);
                     alert('Congratulations. You read instructions well.');
                 } else {
-                    alert('Please try again');
-                    $('.game').empty();
-                    displayLevel(3);
+                    if(checkLives()){
+                        $('.game').empty();
+                        displayLevel(3);
+                    }
                 }
                 
             }

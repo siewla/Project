@@ -1,6 +1,6 @@
 const level0 = () => {
     $('#start-game').on('click', function (){
-        alert('I hope you are not using the tips before the real game! Think harder!');
+        checkLives();
     });
     
     $('#correct-start').on('click', function (){

@@ -12,7 +12,9 @@ const level5 = () => {
             if (imgid!==`index-${cardArray[4]}`){
                 $(this).css('display','none');
                 count++;
-            } 
+            } else{
+                checkLives();
+            }
             
             if (count == 8){
                 setTimeout(function (){

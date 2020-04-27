@@ -1,5 +1,7 @@
 let currentLevel=0;
 let remainingTips=5;
+let remainingLives=5;
+let tipsIndex = [];
 
 const displayLevel = (level) => {
     eval(`level${level}()`);

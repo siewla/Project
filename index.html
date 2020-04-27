@@ -20,7 +20,7 @@
     <script src="js/app.js"></script>
     <script src="js/createGameLevel.js"></script>
     <script src="js/tipsdescription.js"></script>
-    <script src="js/tips.js"></script>
+    <script src="js/lives_tips.js"></script>
     <script src="js/cards.js"></script>
     <script src="js/level_0.js"></script>
     <script src="js/level_1.js"></script>
@@ -37,9 +37,18 @@
 <body>
     <div class="title-header">
         <img src="img/logo.png" id="logo">
-        <marquee class="html-marquee" direction="left" behavior="alternate" scrollamount="2" >HAVE FUN!</marquee>
+        <div class ="lives-main">
+            <h2 id="lives-title">Lives</h2>
+            <div class ="lives-container">
+                <img src ="img/lives.png" class ="lives active">
+                <img src ="img/lives.png" class ="lives active">
+                <img src ="img/lives.png" class ="lives active">
+                <img src ="img/lives.png" class ="lives active">
+                <img src ="img/lives.png" class ="lives active">
+            </div>
+        </div>
         <div class = "tips-main">
-            <h2 id="tips-title">Remaining Tips</h2>
+            <h2 id="tips-title">Tips</h2>
             <div class="tips-container">    
                 <img src ="img/tips.png" class="tips">
                 <img src ="img/tips.png" class="tips">
@@ -97,7 +106,9 @@
     </div>   
     </div>
     <footer class ="page-footer">
+        
         <h3 id="disclaimer">*Disclaimer: This game is working best on desktop and landscape view.</h3>
+        <marquee class="html-marquee" direction="left" behavior="alternate" scrollamount="2" >HAVE FUN!</marquee>
         <!-- <form id>
             <input type="text" id="cheat-code" placeholder="cheat code">
             <button type="submit" id="ccButton">ok</button>

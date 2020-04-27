@@ -29,7 +29,7 @@ const level4 = () => {
             changeLevel(4,5);
             alert ('Congratulations. You are correct.');
         } else {
-            alert ('Please try again');
+            checkLives();
         }
     });
 };

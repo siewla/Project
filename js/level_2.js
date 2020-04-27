@@ -22,7 +22,7 @@ const level2 = () => {
             changeLevel(2,3);
             alert ('Congratulations. You are correct.');
         } else {
-            alert ('Please try again');
+            checkLives();
         }
     });
 };
