@@ -126,19 +126,22 @@
   margin-left: 2vh;
   display: flex;
   flex-direction: column;
-  font-size: 5vh;
   font-family: 'Luckiest Guy', cursive;
 }
 
 #reset-level{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color:wheat;
   border-radius: 30%;
   background-color: #CC3300;
-  height: 6vh;
-  width: 6vh;
+  height: 8vh;
+  width: 8vh;
+  line-height: 8vh;
+  vertical-align: center;
+  text-align: center;
+  font-size: 7vh;
 
 }
 
@@ -373,16 +376,19 @@
 }
 
 .level-button {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background-color: green;
   cursor: pointer;
   border-radius: 20%;
-  height: 3vh;
+  height: 4vh;
+  line-height: 4vh;
+  vertical-align: center;
+  text-align: center;
   color:wheat;
   font-family: 'Luckiest Guy', cursive;
-  font-size: 2.5vh
+  font-size: 3.0vh
 } 
   
 .level-button[disabled=disabled], button:disabled {
