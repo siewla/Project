@@ -56,7 +56,7 @@ const level10 = () => {
             alert ('Congratulations. You completed 10 levels.');
             setTimeout(function (){
                 location.reload();
-            } , 2000);
+            } , 1000);
         } else {
             checkLives();
         }
