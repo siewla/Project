@@ -56,11 +56,29 @@ const sortedCardArray = (array) =>{
 };
 
 const cardsRandom = (number) => {
+    let shapesIndex = 1;
+    let heartsIndex = 40;
+    let diamondsIndex = 14;
+    let clubsIndex = 27;
 
     const cardIndex = [];
-    for (let i=0;i<52;i++){
-        cardIndex.push(i);
+    /*use only 2 to 8 to avoid confusion*/
+
+    for (let i=0;i<8;i++){
+        cardIndex.push(diamondsIndex);
+        cardIndex.push(clubsIndex);
+        cardIndex.push(heartsIndex);
+        cardIndex.push(shapesIndex);
+        shapesIndex++;
+        heartsIndex++;
+        diamondsIndex++;
+        clubsIndex++;
     }
+
+
+    // for (let i =0;i<cardIndex.length;i++){
+    //     console.log(getImgCardcode(cardIndex[i]));
+    // }
 
     const shuffledIndex = shuffle(cardIndex);
 
@@ -72,3 +90,4 @@ const cardsRandom = (number) => {
     return returnedArrayIndex;
 
 };
+
