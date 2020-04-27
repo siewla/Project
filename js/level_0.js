@@ -4,7 +4,6 @@ const level0 = () => {
     });
     
     $('#correct-start').on('click', function (){
-        activateResetButton();
         alert('What a great start!');
         changeLevel(0,1);
     });
