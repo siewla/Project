@@ -131,13 +131,15 @@
 }
 
 #reset-level{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color:wheat;
   border-radius: 30%;
   background-color: #CC3300;
-  text-align: center;
-  vertical-align: center;
   height: 6vh;
   width: 6vh;
+
 }
 
 #replay{
@@ -371,14 +373,15 @@
 }
 
 .level-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: green;
   cursor: pointer;
   border-radius: 20%;
   height: 3vh;
   color:wheat;
   font-family: 'Luckiest Guy', cursive;
-  text-align: center;
-  vertical-align: center;
   font-size: 2.5vh
 } 
   
