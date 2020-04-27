@@ -24,7 +24,7 @@ const level2 = () => {
     $('#level2-submit').on('click', function (e){
         e.preventDefault();
         const answer = $('#number-of-cards').val();
-        if (answer === '6'){
+        if (answer === randomNumber[randomIndex].toString()){
             changeLevel(2,3);
             alert ('Congratulations. You are correct.');
         } else {
