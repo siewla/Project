@@ -15,7 +15,7 @@ A gauntlet of card puzzles that involve interactions with cards. Players have to
 * Ajax
 
 ## Wireframe design
-![wireframe](https://github.com/siewla/brainout-cards/blob/master/img/wireframe2.png)
+![wireframe](https://github.com/siewla/brainout-cards/blob/master/img/wireframe3.png)
 
 ## API used
 [http://deckofcardsapi.com/](http://deckofcardsapi.com/)
