@@ -54,6 +54,9 @@ const level10 = () => {
         let answer = $('#cardcode10').val();
         if (answer === cardCode[0]){
             alert ('Congratulations. You completed 10 levels.');
+            setTimeout(function (){
+                location.reload();
+            } , 2000);
         } else {
             checkLives();
         }

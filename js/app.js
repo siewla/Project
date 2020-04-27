@@ -24,8 +24,12 @@ const activateLevelButton = (levelIndex) =>{
 
 const activateResetButton = () => {
     $('#reset-level').on('click', function (){
-        $('.game').empty();
-        displayLevel(currentLevel);
+        if(currentLevel===0){
+            location.reload();
+        } else {
+            $('.game').empty();
+            displayLevel(currentLevel);
+        }
     });
 };
 
@@ -80,6 +84,7 @@ $(()=>{
 
     promiseDeck();
     level0();
+    activateResetButton();
 
     for (let i=1;i<=10;i++){
         $(`.level-${i}`).css('display','none');
