@@ -28,7 +28,7 @@ My objective is to create a game that is simple but fun. To achieve that i also 
 Clear all 10 levels to win the game. 
 
 ## Additional Features were under Considerations
-- Timer
+- Audio
 - Sign in feature
 - Leaderboard
 - More levels involving rotating the element, pan the image, etc. 
