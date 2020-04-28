@@ -12,6 +12,9 @@ const level8 = () => {
     $('<img>').attr({ src: `${getImgURL(11)}` }).addClass('level8-img').appendTo('#computer-deck');
     $('<img>').attr({ src: `${getImgURL(0)}` }).addClass('level8-img').appendTo('#computer-deck');
 
+
+
+
     for (let i=1;i<$('.level8-img').length;i=i+2){
         $('.level8-img').eq(i).draggable({
             containment: '.level-container',

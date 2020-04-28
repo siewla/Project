@@ -21,6 +21,7 @@
     <script src="js/createGameLevel.js"></script>
     <script src="js/tipsdescription.js"></script>
     <script src="js/lives_tips.js"></script>
+    <script src="js/progress_bar.js"></script>
     <script src="js/cards.js"></script>
     <script src="js/level_0.js"></script>
     <script src="js/level_1.js"></script>
@@ -58,6 +59,13 @@
                 <img src ="img/tips.png" class="tips">
             </div>
         </div>
+    </div>
+    <div class = timer>
+        <h3 id = timer-title>Time Left : </h3>
+        <h3 id = time-left></h3>
+        <timebar id="time-bar">    
+            <div></div>    
+        </timebar>
     </div>
     <div class ="main">
         <div class ="level">
@@ -108,9 +116,8 @@
     </div>   
     </div>
     <footer class ="page-footer">
-        
         <h3 id="disclaimer">*Disclaimer: This game is working best on desktop and landscape view.</h3>
-        <marquee class="html-marquee" direction="left" behavior="alternate" scrollamount="2" >HAVE FUN!</marquee>
+        <!-- <marquee class="html-marquee" direction="left" behavior="alternate" scrollamount="2" >HAVE FUN!</marquee> -->
         <!-- <form id>
             <input type="text" id="cheat-code" placeholder="cheat code">
             <button type="submit" id="ccButton">ok</button>

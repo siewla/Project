@@ -10,8 +10,11 @@ const minusTips = (index) =>{
 const minusLives = () =>{
     remainingLives--;
     $('.active').last().removeClass('active').css('opacity','0.4');
-    alert('Please try again, You lost a live');
-
+    if (currentLevel !==0){
+        stopTimer();
+        resetTimer(currentLevelTimer());
+        runTimer();
+    }
 };    
 
 const checkLives = () => {
@@ -24,6 +27,7 @@ const checkLives = () => {
         return false;
     }else{
         minusLives();
+        alert('You lost a live');
         return true;
     }
 };

@@ -5,6 +5,8 @@ const level9 = () => {
         $('<img>').attr({ src: `${getImgURL(cardArray[i])}` }).addClass('level9-img').appendTo('#level-9');
     }
     $('.level9-img').css('opacity','0');
+
+ 
     
     let count = 0;
     for (let i =0; i<$('.level9-img').length;i++) {

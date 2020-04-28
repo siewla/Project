@@ -15,7 +15,7 @@ const level7 = () =>{
             },
         });
     }
-
+    
     $('#level7-dragzone').droppable({
         tolerance: 'intersect',
         accept:'.level7-img',

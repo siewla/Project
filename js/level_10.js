@@ -16,6 +16,8 @@ const level10 = () => {
     $('<input type="text" id="cardcode10" placeholder="eg. 5S 2D 6C 9H">').appendTo($('#level-10-form'));
     $('<button type="submit" class="btn btn-primary boroughs" id="level10-submit">Submit</button>').appendTo($('#level-10-form'));
 
+  
+    
     $( function () {
         $('.level10-img').draggable();
     });

@@ -5,6 +5,7 @@ const level0 = () => {
     
     $('#correct-start').on('click', function (){
         alert('What a great start!');
+        $('.timer').css('display','flex');
         changeLevel(0,1);
     });
 };

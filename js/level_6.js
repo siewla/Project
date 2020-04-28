@@ -12,6 +12,8 @@ const level6 =() => {
         containment: '.level-container'
     });
 
+
+
     $('.level6-dropzone').droppable({
         tolerance: 'intersect',
         accept: '.level6-img',

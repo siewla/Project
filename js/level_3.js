@@ -19,6 +19,7 @@ const level3 =() => {
         correctArray.push(`index-${sortedCards[i]}`);
     }
 
+
     let idArray = [];
     for (let i=0; i<$('.level3-img').length; i++){
         $('.level3-img').eq(i).on('click',function (event){

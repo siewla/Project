@@ -407,4 +407,31 @@
   cursor:not-allowed;
 }
 
-  
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#timer-title, #time-left {
+  align-self: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: bolder;
+  font-size: 2vh;
+  margin-right: 2vh;
+}
+
+#time-bar{
+  width: 150px;
+  height: 18px;
+}
+
+#time-bar div {
+  height: 100%;
+  line-height: 18px; 
+  width: 0;
+  background-color: rgb(15, 180, 117);
+  box-sizing: border-box;
+}

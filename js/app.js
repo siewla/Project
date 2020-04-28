@@ -2,6 +2,9 @@ let currentLevel=0;
 let remainingTips=5;
 let remainingLives=5;
 let tipsIndex = [];
+let timeLeft = 15;
+let timeTotal = 15;
+let increment;
 
 const displayLevel = (level) => {
     eval(`level${level}()`);
@@ -27,8 +30,7 @@ const activateResetButton = () => {
         if(currentLevel===0){
             location.reload();
         } else {
-            $('.game').empty();
-            displayLevel(currentLevel);
+            changeLevel(currentLevel,currentLevel);
         }
     });
 };
@@ -37,6 +39,9 @@ const changeLevel = (current, next)=>{
     activateLevelButton(next);
     changeDisplayLevel(current,next);
     currentLevel=next;
+    stopTimer();
+    resetTimer(currentLevelTimer());
+    runTimer();
 };
 
 const displayWinning = () =>{
@@ -85,6 +90,8 @@ $(()=>{
     promiseDeck();
     level0();
     activateResetButton();
+    
+    $('.timer').css('display','none');
 
     for (let i=1;i<=10;i++){
         $(`.level-${i}`).css('display','none');

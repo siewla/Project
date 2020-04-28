@@ -1,5 +1,5 @@
 const level2 = () => {
-
+    
     const randomNumber = [4, 5, 6, 7];
     const randomIndex = Math.floor(Math.random() * 4);
 
@@ -14,6 +14,7 @@ const level2 = () => {
     $('<form>').attr('id','level-2-form').appendTo('#level-2');
     $('<input type="text" id="number-of-cards" placeholder="# of Cards"></input>').appendTo($('#level-2-form'));
     $('<button type="submit" class="btn btn-primary boroughs" id="level2-submit">Submit</button>').appendTo($('#level-2-form'));
+
 
     $( function () {
         $('.level2-img').draggable({

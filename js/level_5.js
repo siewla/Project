@@ -6,6 +6,9 @@ const level5 = () => {
     }
     $('.level-title').text(`Level 5 - Submit card ${getImgCardcode(cardArray[4])}`);
     let count = 0;
+
+
+
     for (let i=0; i<$('.level5-img').length; i++){
         $('.level5-img').eq(i).on('dblclick',function (event){
             let imgid = $('.level5-img').eq(i)[0].id;
