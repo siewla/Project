@@ -15,14 +15,20 @@ const displayNoneLevel = (level) => {
     $(`.level-${level}`).css('display','none');
 };
 
-const changeDisplayLevel = (fromCurrentLevel, changeToLevel) =>{
-    displayNoneLevel(fromCurrentLevel);
+const changeLevel = (currentLevel, nextLevel) => {
+    displayNoneLevel(currentLevel);
     $('.game').empty();
-    displayLevel(changeToLevel);
+    displayLevel(nextLevel);
+    currentLevel = nextLevel;
+    activateLevelButton(currentLevel);
+    stopTimer();
+    $('.timer').css('display','flex');
+    resetTimer(currentLevelTimer(currentLevel));
+    runTimer();
 };
 
-const activateLevelButton = (levelIndex) =>{
-    $('.level-button').eq(levelIndex-1).prop('disabled',false);
+const activateLevelButton = (currentLevel) =>{
+    $('.level-button').eq(currentLevel-1).prop('disabled',false);
 };
 
 const activateResetButton = () => {
@@ -35,18 +41,6 @@ const activateResetButton = () => {
     });
 };
 
-const changeLevel = (current, next)=>{
-    activateLevelButton(next);
-    changeDisplayLevel(current,next);
-    currentLevel=next;
-    stopTimer();
-    resetTimer(currentLevelTimer());
-    runTimer();
-};
-
-const displayWinning = () =>{
-    alert ('Congratulations. The hint worked!');
-};
 
 const allEqual = (arrOne, arrTwo) => {
     let indexTrue = 0;

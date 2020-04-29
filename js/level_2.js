@@ -1,5 +1,5 @@
 const level2 = () => {
-    
+    currentLevel = 2;
     const randomNumber = [4, 5, 6, 7];
     const randomIndex = Math.floor(Math.random() * 4);
 
@@ -26,10 +26,9 @@ const level2 = () => {
         e.preventDefault();
         const answer = $('#number-of-cards').val();
         if (answer === randomNumber[randomIndex].toString()){
-            changeLevel(2,3);
-            alert ('Congratulations. You are correct.');
+            showWinningAlert();
         } else {
-            checkLives();
+            showLosingAlert();
         }
     });
 };

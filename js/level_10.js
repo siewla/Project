@@ -1,4 +1,5 @@
 const level10 = () => {
+    currentLevel=10;
     createGameLevel(10,'Level 10 : What is the card code?');
     const cardArray =cardsRandom(1);
     const cardCode =[];
@@ -22,45 +23,14 @@ const level10 = () => {
         $('.level10-img').draggable();
     });
 
-    // let clicking = false;
-    // let previousX;
-    // let previousY;
-
-    // $('#inner').mousedown(function (e){
-    //     e.preventDefault();
-    //     previousX = e.clientX;
-    //     previousY = e.clientY;
-    //     clicking = true;
-    // });
-
-    // $(document).mouseup(function (){
-    //     clicking = false;
-    // });
-
-    // $('#inner').mousemove(function (e) {
-    //     if (clicking){
-    //         e.preventDefault();
-    //         $('#inner').scrollLeft($('#inner').scrollLeft() + (previousX - e.clientX));
-    //         $('#inner').scrollTop($('#inner').scrollTop() + (previousY - e.clientY));
-    //         previousX = e.clientX;
-    //         previousY = e.clientY;
-    //     }
-    // });
-
-    // $('#inner').mouseleave(function () {
-    //     clicking = false;
-    // });
-
     $('#level10-submit').on('click', function (e){
         e.preventDefault();
         let answer = $('#cardcode10').val();
         if (answer === cardCode[0]){
-            alert ('Congratulations. You completed 10 levels.');
-            setTimeout(function (){
-                location.reload();
-            } , 1000);
+            $('#modal-content').html('<p>Bravo. </p> <p> You completed 10 Levels. </p>');
+            restartGame();
         } else {
-            checkLives();
+            showLosingAlert();
         }
     });
 

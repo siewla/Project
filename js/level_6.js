@@ -1,4 +1,5 @@
 const level6 =() => {
+    currentLevel=6;
     createGameLevel(6,'Level 6 - What is the biggest value deck?');
     const cardArray =cardsRandom(4);
     $('<img>').attr({ src: `${getImgURL(cardArray[0])}` }).addClass('level6-dropzone').appendTo('#level-6');
@@ -11,8 +12,6 @@ const level6 =() => {
     $('.level6-img').draggable({
         containment: '.level-container'
     });
-
-
 
     $('.level6-dropzone').droppable({
         tolerance: 'intersect',
@@ -29,8 +28,7 @@ const level6 =() => {
             ui.draggable.draggable({ disabled: true });
             stackedCard++;
             if (stackedCard===3){
-                changeLevel(6,7);
-                alert('Congratulations. You are so smart');
+                showWinningAlert();
             }
         }
     });

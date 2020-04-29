@@ -23,6 +23,7 @@
     <script src="js/lives_tips.js"></script>
     <script src="js/progress_bar.js"></script>
     <script src="js/cards.js"></script>
+    <script src="js/modal-alert.js"></script>
     <script src="js/level_0.js"></script>
     <script src="js/level_1.js"></script>
     <script src="js/level_2.js"></script>
@@ -52,11 +53,11 @@
         <div class = "tips-main">
             <h2 id="tips-title">Tips</h2>
             <div class="tips-container">    
-                <img src ="img/tips.png" class="tips">
-                <img src ="img/tips.png" class="tips">
-                <img src ="img/tips.png" class="tips">
-                <img src ="img/tips.png" class="tips">
-                <img src ="img/tips.png" class="tips">
+                <img src ="img/tips.png" class="tips active-tips">
+                <img src ="img/tips.png" class="tips active-tips">
+                <img src ="img/tips.png" class="tips active-tips">
+                <img src ="img/tips.png" class="tips active-tips">
+                <img src ="img/tips.png" class="tips active-tips">
             </div>
         </div>
     </div>
@@ -114,6 +115,19 @@
         <button id ="reset-level">&#x21BA;</button>
         <h3 id ="replay">Replay<br>Level</h3>
     </div>   
+    </div>
+    <div id="modal">
+        <div id="modal-textbox">
+            <div id = "modal-heading">
+                Alert
+            </div>
+            <div id="modal-content">
+                <p>modal content </p> <p>modal content</p> 
+            </div>
+            <div id="modal-footer">
+                <button class="modal-buttons" id="modal-close" href="#">Ok</button>
+            </div>
+        </div>
     </div>
     <footer class ="page-footer">
         <h3 id="disclaimer">*Disclaimer: This game is working best on desktop and landscape view.</h3>

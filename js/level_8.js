@@ -1,4 +1,5 @@
 const level8 = () => {
+    currentLevel=8;
     createGameLevel(8,'Level 8: Win this Game. (Blackjack)'); 
     
     $('<div>').attr('id','player-deck').appendTo('#level-8');
@@ -27,12 +28,7 @@ const level8 = () => {
     let count = 0;
     const checkForWinng = () => {
         if (count===2){
-            setTimeout(function (){
-                alert('You are good in cheating');
-            } , 200);
-            setTimeout(function (){
-                changeLevel(8,9);
-            } , 200);
+            showWinningAlert();
         }
     };
 

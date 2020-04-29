@@ -1,4 +1,5 @@
 const level4 = () => {
+    currentLevel=4;
     createGameLevel(4,'Level 4 - What is the number?'); 
     const cardArray =cardsRandom(1);
     const cardCode =[];
@@ -26,10 +27,9 @@ const level4 = () => {
         e.preventDefault();
         let answer = $('#card-code').val();
         if (answer === firstChar){
-            changeLevel(4,5);
-            alert ('Congratulations. You are correct.');
+            showWinningAlert();
         } else {
-            checkLives();
+            showLosingAlert();
         }
     });
 };

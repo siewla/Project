@@ -1,4 +1,5 @@
 const level3 =() => {
+    currentLevel = 3;
     createGameLevel(3,'Level 3 - Click the first row right to left and last row in order');   
     const cardArray =cardsRandom(9);
     for (let i =0; i<cardArray.length;i++){
@@ -31,40 +32,12 @@ const level3 =() => {
             if (idArray.length === 6){
                 let checkArray = allEqual(correctArray,idArray);
                 if (checkArray){
-                    changeLevel(3,4);
-                    alert('Congratulations. You read instructions well.');
+                    showWinningAlert();
                 } else {
-                    if(checkLives()){
-                        $('.game').empty();
-                        displayLevel(3);
-                    }
+                    showLosingAlert();
                 }
                 
             }
         });
     }    
 };
-
-
-
-    // let itemInsidebox = 0; 
-    // $('.level3-img').draggable({
-    //     containment: '.level-3-container'
-    // });
-
-    // $('#level3-dragzone').droppable({
-    //     tolerance: 'intersect',
-    //     accept:'.level3-img',
-    //     drop: function (event,ui){
-    //         itemInsidebox++;
-    //         ui.draggable.css('display','none');
-    //         if (itemInsidebox===4){
-    //             setTimeout(function (){
-    //                 displayWinning();
-    //             } , 200);
-    //             setTimeout(function (){
-    //                 changeLevel(3,4);
-    //             } , 200);
-    //         }
-    //     }
-    // });

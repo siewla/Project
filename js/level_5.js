@@ -1,4 +1,5 @@
 const level5 = () => {
+    currentLevel = 5;
     createGameLevel(5,'Level 5 - Submit card 5');
     const cardArray =cardsRandom(9);
     for (let i =0; i<cardArray.length;i++){
@@ -16,16 +17,11 @@ const level5 = () => {
                 $(this).css('display','none');
                 count++;
             } else{
-                checkLives();
+                showLosingAlert();
             }
             
             if (count == 8){
-                setTimeout(function (){
-                    alert ('You are genius.');
-                } , 200);
-                setTimeout(function (){
-                    changeLevel(5,6);
-                } , 200);
+                showWinningAlert();
             }
         });
     }

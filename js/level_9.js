@@ -1,4 +1,5 @@
 const level9 = () => {
+    currentLevel=9;
     createGameLevel(9,'Level 9 : Find out all hidden cards');
     const cardArray =cardsRandom(6);
     for (let i =0; i<cardArray.length;i++){
@@ -15,12 +16,7 @@ const level9 = () => {
             $('.level9-img').eq(i).unbind('mouseover');
             count++;
             if (count == 6){
-                setTimeout(function (){
-                    alert ('You are smart.');
-                } , 200);
-                setTimeout(function (){
-                    changeLevel(9,10);
-                } , 200);
+                showWinningAlert();
             }
         });
     }

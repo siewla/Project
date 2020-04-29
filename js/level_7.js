@@ -1,4 +1,5 @@
 const level7 = () =>{
+    currentLevel=7;
     createGameLevel(7,''); 
     const cardArray =cardsRandom(3);
     for (let i =0; i<cardArray.length;i++){
@@ -23,12 +24,7 @@ const level7 = () =>{
             itemInsidebox++;
             ui.draggable.css('display','none');
             if (itemInsidebox===4){
-                setTimeout(function (){
-                    displayWinning();
-                } , 200);
-                setTimeout(function (){
-                    changeLevel(7,8);
-                } , 200);
+                showWinningAlert();
             }
         }
     });
