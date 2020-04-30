@@ -600,3 +600,242 @@
   letter-spacing: .25vh;
   margin-bottom: 2vh;
 }
+
+@media only screen and (max-width: 600px) {
+
+.main-game{
+  width:40vh;
+}
+
+.level-title{
+  font-size: 1vh;
+}
+
+.level-description{
+  max-width: 40vh;
+  font-size: 2vh;
+}
+
+#level-all{
+  font-size: 2vh;
+}
+
+/* Level 0 */
+.level-0 {
+  height: 40vh;
+  width: 40vh;
+}
+
+#start-game-title{
+  font-size: 3vh;
+}
+
+#start-game-instruction{
+  font-size: 2vh;
+}
+
+/*start button*/
+#start-game {
+  font-size: 2vh;
+}
+
+.title-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+#logo-container {
+  width: 5vh;
+  height: 5vh;
+  padding: 1vh;
+}
+
+#logo {
+  max-width:5vh;
+}
+
+.tips-main, .lives-main{
+  width: 15vh;
+  margin-left: 3vh;
+}
+  
+
+#tips-title, #lives-title{
+  font-size: 1.5vh;
+}
+  
+.tips, .lives{  
+  width: 3vh;
+  height: 3vh;
+  padding: 0.1vh;
+}
+  
+.level{
+  padding:10px;
+  margin-bottom: 5vh;
+  height: 40vh;
+}
+  
+.level-container{
+  height: 40vh;
+  width: 40vh;
+}
+  
+/* level-1 */
+#level-1 {
+  padding: 5px;
+}
+    
+#A {      
+  max-height: 19vh;
+}
+  
+#B {
+  max-height: 21vh;
+}
+  
+#C {
+  max-height: 18vh;
+}
+  
+#D {      
+  max-height: 9vh;
+}
+  
+/* level-2 */
+
+.level2-img {
+  max-height: 15vh;
+}
+  
+/* level-3 */
+.level3-img, .level5-img{
+  margin: 1vh;
+  max-width: 8vh;
+}
+  
+/* level-4 */
+
+#level-2-form, #level-4-form, #level-10-form{
+  height: 4vh;
+  font-size: 1.5vh;
+}
+  
+.level4-img{    
+  height: 3vh;
+}
+  
+/* level-6 */
+.level6-img, .level6-dropzone{    
+  max-height: 18vh;
+}
+
+/* level -7 */
+.level7-img {    
+  max-height: 12vh;
+}
+  
+.box{
+  max-height: 15vh;
+}
+  
+/* level -8 */
+#player-deck, #computer-deck{
+  height: 15vh;
+  width: 30vh;
+  border: 1px solid black;
+}
+
+.level8-img {
+  max-height: 10vh;
+}
+  
+.deck-title{
+  font-size: 1.5vh;
+} 
+
+/* level -9 */
+.level9-img{   
+  height: 3vh;
+}
+  
+/* level -10 */
+.level10-img {    
+  max-height: 15vh;
+}
+  
+ 
+#disclaimer{    
+  font-size: 1vh;
+}
+  
+.level-button {    
+  width: 4vh;
+  height: 3vh;
+  font-size: 2vh
+} 
+
+.timer {
+  height: 4vh;
+  width: 40vh;
+}
+  
+#timer-title, #time-left {
+  font-size: 1.5vh;
+  letter-spacing: 0.25vh;
+  margin-right: 2vh;
+}
+  
+#time-bar{
+  width: 10vh;
+  height: 2vh
+}
+
+/* Modal */
+  
+#modal-textbox {
+  height: 20vh;
+  width: 20vh;
+}
+  
+#about-textbox {
+  height: 40vh;
+  width: 40vh;
+}
+  
+#modal-heading, #about-heading{
+  font-size: 1.5vh;
+}
+  
+#modal-content{
+  font-size: 1.5vh;
+}
+  
+#about-content{
+  height: 30vh;
+  font-size: 1.5vh;
+  overflow: scroll;
+}
+
+#about-content > h3{
+  font-size: 1.5vh;
+}
+
+
+#reset-level{
+  font-size: 3vh;
+  height: 3vh;
+  width: 3vh;
+  line-height: 3vh;
+}
+
+#replay{
+  text-align: center;
+  font-size:1vh;
+  width:3vh;
+}
+
+}
+
