@@ -7,7 +7,39 @@ let timeTotal = 15;
 let increment;
 
 const displayLevel = (level) => {
-    eval(`level${level}()`);
+    switch(level){
+    case 1:
+        level1();
+        break;
+    case 2: 
+        level2();              
+        break;
+    case 3: 
+        level3();     
+        break;
+    case 4:
+        level4();
+        break;
+    case 5:
+        level5();
+        break;
+    case 6:
+        level6();
+        break;
+    case 7:
+        level7();
+        break;
+    case 8:
+        level8();
+        break;
+    case 9:
+        level9();
+        break;
+    case 10:
+        level10();
+        break;
+    default:
+    } 
     $(`.level-${level}`).css('display','block');
 };
 
