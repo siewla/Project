@@ -54,7 +54,7 @@ const setWinningAlertMessage = () => {
 };
 
 const setLosingAlertMessage = () => {
-    let message = '<p>Ooops, please Try again! </p> <p>You lost a live &#128148;</p>';
+    let message = '<p>Ooops, please Try again! </p> <p>You lost a life &#128148;</p>';
     $('#modal-content').html(message);
     if (currentLevel!==0){
         changeLevel(currentLevel,currentLevel);
@@ -86,7 +86,7 @@ const showLosingAlert = () => {
 
 const showTimeOut = () => {
     if (checkLives()){
-        $('#modal-content').html('<p>Timeout ⏰! </p> <p>You lost a live &#128148;.</p>');
+        $('#modal-content').html('<p>Timeout ⏰! </p><br><p>You lost a life &#128148;.</p>');
         displayAlert();
     }
     $('#modal-close').on('click', () => {
