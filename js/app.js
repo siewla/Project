@@ -28,7 +28,11 @@ const changeLevel = (currentLevel, nextLevel) => {
 };
 
 const activateLevelButton = (currentLevel) =>{
+    if (currentLevel !== 1){
+        $('.level-button').eq(currentLevel-2).css('opacity','0.6');
+    }
     $('.level-button').eq(currentLevel-1).prop('disabled',false);
+    $('.level-button').eq(currentLevel-1).css('background-color','green');
 };
 
 const activateResetButton = () => {
@@ -87,6 +91,19 @@ $(()=>{
     
     $('.timer').css('display','none');
 
+    $('#info').on('click', function (){
+        if (currentLevel!==0){
+            stopTimer();
+        }
+        displayAbout();
+        $('#about-close').on('click', () => {
+            closeAbout();
+            if (currentLevel!==0){
+                runTimer();
+            }
+        });
+    });
+
     for (let i=1;i<=10;i++){
         $(`.level-${i}`).css('display','none');
     }
@@ -96,6 +113,7 @@ $(()=>{
     for (let i=0; i<$('.level-button').length; i++){
         $('.level-button').eq(i).on('click', function (){
             $('.game').empty();
+            
             changeLevel(currentLevel,i+1);
             currentLevel= i+1;
         });

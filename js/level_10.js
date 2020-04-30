@@ -1,6 +1,6 @@
 const level10 = () => {
     currentLevel=10;
-    createGameLevel(10,'Level 10 : What is the card code?');
+    createGameLevel(10,'What is the card code?');
     const cardArray =cardsRandom(1);
     const cardCode =[];
 
@@ -28,6 +28,7 @@ const level10 = () => {
         let answer = $('#cardcode10').val();
         if (answer === cardCode[0]){
             $('#modal-content').html('<p>Bravo. </p> <p> You completed 10 Levels. </p>');
+            stopTimer();
             restartGame();
         } else {
             showLosingAlert();

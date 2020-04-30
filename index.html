@@ -37,105 +37,112 @@
     <script src="js/level_10.js"></script>
 </head>
 <body>
-    <!-- <audio autoplay loop src="music/funday.mp3"></audio> -->
-    <div class="title-header">
-        <img src="img/logo.png" id="logo">
-        <div class ="lives-main">
-            <h2 id="lives-title">Lives</h2>
-            <div class ="lives-container">
-                <img src ="img/lives.png" class ="lives active">
-                <img src ="img/lives.png" class ="lives active">
-                <img src ="img/lives.png" class ="lives active">
-                <img src ="img/lives.png" class ="lives active">
-                <img src ="img/lives.png" class ="lives active">
-            </div>
-        </div>
-        <div class = "tips-main">
-            <h2 id="tips-title">Tips</h2>
-            <div class="tips-container">    
-                <img src ="img/tips.png" class="tips active-tips">
-                <img src ="img/tips.png" class="tips active-tips">
-                <img src ="img/tips.png" class="tips active-tips">
-                <img src ="img/tips.png" class="tips active-tips">
-                <img src ="img/tips.png" class="tips active-tips">
-            </div>
-        </div>
-    </div>
-    <div class = timer>
-        <h3 id = timer-title>Time Left : </h3>
-        <h3 id = time-left></h3>
-        <timebar id="time-bar">    
-            <div></div>    
-        </timebar>
-    </div>
     <div class ="main">
-        <div class ="level">
-            <div id="level-all">Level</div>
-            <button class=level-button>1</button>
-            <button class=level-button>2</button>
-            <button class=level-button>3</button>
-            <button class=level-button>4</button>
-            <button class=level-button>5</button>
-            <button class=level-button>6</button>
-            <button class=level-button>7</button>
-            <button class=level-button>8</button>
-            <button class=level-button>9</button>
-            <button class=level-button>10</button>  
-        </div>
-    <div class ="game">   
-        <div class ="level-container">
-            <div class = "level-0">
-                <h1 id = "start-game-title">Brain Out - Cards</h1>
-                <h2 id = "start-game-instruction">Click <span id ="correct-start">here</span> to start Game</h2>
-                <div class = "start">
-                    <button id ="start-game">Start</button>
-                </div>
+        <div class = "first-column">
+            <div class = "logo">
+                <button id ="info" type="button">About</button>
             </div>
+            <div class ="level">
+                <div id="level-all">Level</div>
+                <button class=level-button>1</button>
+                <button class=level-button>2</button>
+                <button class=level-button>3</button>
+                <button class=level-button>4</button>
+                <button class=level-button>5</button>
+                <button class=level-button>6</button>
+                <button class=level-button>7</button>
+                <button class=level-button>8</button>
+                <button class=level-button>9</button>
+                <button class=level-button>10</button>  
+            </div>   
         </div>
-        <div class ="level-8">
-            <h3 class="level-title">Level 8 : Win the game (Blackjack).</h3>
-            <div class = "level-8-container">
-                <div id = level-8>
-                    <h3 class= "deck-title">Your Deck</h3>
-                    <div id ='player-deck'>
-                        <img src="https://deckofcardsapi.com/static/img/KH.png" id = 'level8-1' class="level8-img">
-                        <img src="https://deckofcardsapi.com/static/img/JC.png" id = 'level8-2' class="level8-img">
-                    </div>
-                    <h3 class= "deck-title">My Deck</h3>
-                    <div id ='computer-deck'>
-                        <img src="https://deckofcardsapi.com/static/img/QD.png" id = 'level8-3' class="level8-img">
-                        <img src="https://deckofcardsapi.com/static/img/AS.png" id = 'level8-4' class="level8-img">
+        <div class ="main-game">
+            <div class="title-header">  
+                 <div class ="lives-main">
+                    <h2 id="lives-title">Lives</h2>
+                    <div class ="lives-container">
+                        <img src ="img/lives.png" class ="lives active">
+                        <img src ="img/lives.png" class ="lives active">
+                        <img src ="img/lives.png" class ="lives active">
+                        <img src ="img/lives.png" class ="lives active">
+                        <img src ="img/lives.png" class ="lives active">
                     </div>
                 </div>
+                <div class = "tips-main">
+                    <h2 id="tips-title">Tips</h2>
+                    <div class="tips-container">    
+                        <img src ="img/tips.png" class="tips active-tips">
+                        <img src ="img/tips.png" class="tips active-tips">
+                        <img src ="img/tips.png" class="tips active-tips">
+                        <img src ="img/tips.png" class="tips active-tips">
+                        <img src ="img/tips.png" class="tips active-tips">
+                    </div>
+                </div>
             </div>
+            <div class = "game">
+                <div class ="level-container">
+                    <div class = "level-0">
+                        <div id ="logo-container">
+                            <img src="img/logo.png" id="logo">
+                        </div>
+                        <h1 id = "start-game-title">Brain Out - Cards</h1>
+                        <h2 id = "start-game-instruction">Click <span id ="correct-start">here</span> to start Game</h2>
+                        <div class = "start">
+                            <button id ="start-game">Start</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class ="page-footer">
+                <h3 id="disclaimer">*Disclaimer: This game is working best on desktop and landscape view.</h3>
+            </footer>
         </div>
-    </div>
-    <div class ="side-buttons">
-        <!-- <button id ="toggle-audio">&#x1f508;</button> -->
-        <button id ="reset-level">&#x21BA;</button>
-        <h3 id ="replay">Replay<br>Level</h3>
-    </div>   
-    </div>
+        <div class ="side-buttons">
+            <button id ="reset-level">&#x21BA;</button>
+            <h3 id ="replay">Replay<br>Level</h3>
+        </div>   
     <div id="modal">
         <div id="modal-textbox">
             <div id = "modal-heading">
                 Alert
             </div>
             <div id="modal-content">
-                <p>modal content </p> <p>modal content</p> 
+                <p>modal </p> <p>modal content</p> 
             </div>
             <div id="modal-footer">
                 <button class="modal-buttons" id="modal-close" href="#">Ok</button>
             </div>
         </div>
     </div>
-    <footer class ="page-footer">
-        <h3 id="disclaimer">*Disclaimer: This game is working best on desktop and landscape view.</h3>
-        <!-- <marquee class="html-marquee" direction="left" behavior="alternate" scrollamount="2" >HAVE FUN!</marquee> -->
-        <!-- <form id>
-            <input type="text" id="cheat-code" placeholder="cheat code">
-            <button type="submit" id="ccButton">ok</button>
-        </form> -->
-    </footer>
+    <div id="about-modal">
+        <div id="about-textbox">
+            <div id = "about-heading">
+                about
+            </div>
+            <div id="about-content">
+                <br>
+                <p>It is a game for you to think outside of the box.</p>
+                <br>
+                <p>The game use the following rankings</p>
+                    <pre>Name             Symbol      Code      Rank</pre>
+                    <pre>Shapes            &#9824;          S         1</pre>
+                    <pre>Hearts            &#9829;          H         2</pre>
+                    <pre>Clubs             &#9827;          C         3</pre>
+                    <pre>Diamonds          &#9830;          D         4</pre>
+                
+                <h3>Lives</h3>
+                <p>&#10004;  You have 5 lives to begin with.</p>
+                <p>&#10004;  You will lost a live if timeout and click wrongly.</p>
+                <h3>Tips</h3>
+                <p>&#10004;  You have a total of 5 tips available throughout the game</p>
+                <p>&#10004;  Only one tip is available per level to redeem to help you to solve the level.</p>
+                <h3>Timer</h3>
+                <p>&#10004;  It is a timed game for level 1 to 10.</p>
+            </div>
+            <div id="about-footer">
+                <button class="modal-buttons" id="about-close" href="#">Close</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const level6 =() => {
     currentLevel=6;
-    createGameLevel(6,'Level 6 - What is the biggest value deck?');
+    createGameLevel(6,'What is the biggest value deck?');
     const cardArray =cardsRandom(4);
     $('<img>').attr({ src: `${getImgURL(cardArray[0])}` }).addClass('level6-dropzone').appendTo('#level-6');
     for (let i =1; i<cardArray.length;i++){

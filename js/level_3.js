@@ -1,6 +1,6 @@
 const level3 =() => {
     currentLevel = 3;
-    createGameLevel(3,'Level 3 - Click the first row right to left and last row in order');   
+    createGameLevel(3,'Click the first row right to left and last row in order');   
     const cardArray =cardsRandom(9);
     for (let i =0; i<cardArray.length;i++){
         $('<img>').attr({ src: `${getImgURL(cardArray[i])}`, id: `index-${cardArray[i]}` }).addClass('level3-img').appendTo('#level-3');

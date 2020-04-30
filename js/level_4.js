@@ -1,6 +1,6 @@
 const level4 = () => {
     currentLevel=4;
-    createGameLevel(4,'Level 4 - What is the number?'); 
+    createGameLevel(4,'What is the number?'); 
     const cardArray =cardsRandom(1);
     const cardCode =[];
     for (let i =0; i<cardArray.length;i++){

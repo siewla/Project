@@ -1,6 +1,6 @@
 const level9 = () => {
     currentLevel=9;
-    createGameLevel(9,'Level 9 : Find out all hidden cards');
+    createGameLevel(9,'Find out all hidden cards');
     const cardArray =cardsRandom(6);
     for (let i =0; i<cardArray.length;i++){
         $('<img>').attr({ src: `${getImgURL(cardArray[i])}` }).addClass('level9-img').appendTo('#level-9');

@@ -3,7 +3,7 @@ const level2 = () => {
     const randomNumber = [4, 5, 6, 7];
     const randomIndex = Math.floor(Math.random() * 4);
 
-    createGameLevel(2,'Level 2 - How many cards?');
+    createGameLevel(2,'How many cards?');
 
 
     const cardArray =cardsRandom(randomNumber[randomIndex]);

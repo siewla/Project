@@ -1,9 +1,8 @@
 $(()=>{
     for (let i=0; i<$('.tips').length;i++){
-        $('.active-tips').eq(i).on('click', function (){
+        $('.tips').eq(i).on('click', function (){
             stopTimer();
             let message = '';
-            console.log($('.active-tips').length);
             if ($('.active-tips').length >0 || tipsIndex.includes(currentLevel)===true) {
                 minusTips(i);
                 switch(currentLevel){

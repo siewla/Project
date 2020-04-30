@@ -6,7 +6,7 @@ const level7 = () =>{
         $('<img>').attr({ src: `${getImgURL(cardArray[i])}` }).addClass('level7-img').appendTo('#level-7');
     }
     $('<img>').attr({ src: 'img/box.png', id:'level7-dragzone' }).addClass('box').appendTo('#level-7');
-    $('<div>Level 7 : Put <span class="level7-img">everything</span> inside the box</div>').appendTo('.level-title');
+    $('<div>Put <span class="level7-img">everything</span> inside the box</div>').appendTo('.level-description');
     let itemInsidebox = 0; 
     for (let i=0;i<$('.level7-img').length;i++){
         $('.level7-img').eq(i).draggable({

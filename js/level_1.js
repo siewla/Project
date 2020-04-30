@@ -1,6 +1,6 @@
 const level1 = () => {
     currentLevel = 1;
-    createGameLevel(1,'Level 1 - Click the largest Card');
+    createGameLevel(1,'Click the largest Card');
 
     const cardArray =cardsRandom(4);
     const cardID = ['A','B','C','D'];

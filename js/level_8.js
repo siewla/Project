@@ -1,6 +1,6 @@
 const level8 = () => {
     currentLevel=8;
-    createGameLevel(8,'Level 8: Win this Game. (Blackjack)'); 
+    createGameLevel(8,'Win this Game (Blackjack)'); 
     
     $('<div>').attr('id','player-deck').appendTo('#level-8');
     $('<h3>').attr('class','deck-title').text('Your Deck').appendTo('#player-deck');

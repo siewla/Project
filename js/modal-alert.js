@@ -1,3 +1,11 @@
+const displayAbout = () =>{
+    $('#about-modal').css('display', 'block');
+};
+
+const closeAbout = () =>{
+    $('#about-modal').css('display', 'none');
+};
+
 const displayAlert = () => {
     $('#modal').css('display', 'block');
 };
