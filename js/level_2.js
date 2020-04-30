@@ -13,7 +13,7 @@ const level2 = () => {
 
     $('<form>').attr('id','level-2-form').appendTo('#level-2');
     $('<input type="text" id="number-of-cards" placeholder="# of Cards"></input>').appendTo($('#level-2-form'));
-    $('<button type="submit" class="btn btn-primary boroughs" id="level2-submit">Submit</button>').appendTo($('#level-2-form'));
+    $('<button type="submit" id="level2-submit">Submit</button>').appendTo($('#level-2-form'));
 
 
     $( function () {

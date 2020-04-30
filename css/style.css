@@ -256,9 +256,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-#level-2-form{
-   align-self: flex-end;
-}
 
 .level2-img {
     max-height: 20vh;
@@ -278,7 +275,7 @@
 .level3-img{
   margin: 1vh;
   max-height: 18vh;
-  border: 1px solid black
+  /* border: 1px solid black */
 }
 
 /* level-4 */
@@ -289,18 +286,18 @@
   justify-content: center;
   justify-items: center;
 }
-#level-4-form, #level-10-form{
+#level-2-form, #level-4-form, #level-10-form{
    align-self: flex-end;
    font-family: 'Luckiest Guy', cursive;
    height: 5vh;
    font-size: 2vh;
 }
 
-#card-code, #cardcode10{
+#card-code, #cardcode10, #number-of-cards{
   text-align: center;
 }
 
-#level4-submit, #level10-submit{
+#level2-submit, #level4-submit, #level10-submit{
   margin-left: 2vh;
   background-color: black;
   color: white; 
@@ -326,7 +323,7 @@
 .level5-img {
   margin: 1vh;
   max-height: 18vh;
-  border: 1px solid black
+  /* border: 1px solid black */
 }
 
 /* level -6 */
@@ -341,7 +338,7 @@
 .level6-img, .level6-dropzone{
   margin: 10px;
   max-height: 25vh;
-  border: 1px solid black
+  /* border: 1px solid black */
 }
 /* level -7 */
 #level-7 {
@@ -379,7 +376,7 @@
   }
   .level8-img {
     max-height: 15vh;
-    border: 1px solid black
+    /* border: 1px solid black */
   }
 
   .deck-title{
