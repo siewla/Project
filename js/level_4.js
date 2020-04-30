@@ -10,7 +10,7 @@ const level4 = () => {
 
     $('<form>').attr('id','level-4-form').appendTo('#level-4');
     $('<input type="text" id="card-code" placeholder="cardnumber">').appendTo($('#level-4-form'));
-    $('<button type="submit" class="btn btn-primary boroughs" id="level4-submit">Submit</button>').appendTo($('#level-4-form'));
+    $('<button type="submit" id="level4-submit">Submit</button>').appendTo($('#level-4-form'));
 
     $('.level4-img').on('click',function (){
         activateResetButton();
