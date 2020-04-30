@@ -49,8 +49,9 @@ $(()=>{
             displayAlert();
             $('#modal-close').on('click', () => {
                 closeAlert();
-                $('#modal-close').unbind();
                 runTimer();
+                $('#modal-close').unbind();
+                
             });
             
         });
