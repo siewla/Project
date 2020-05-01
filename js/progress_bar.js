@@ -22,7 +22,8 @@ const resetTimer = (timeGiven) => {
 
 
 const stopTimer = () =>{
-    clearInterval(increment);
+    // clearInterval(increment);
+    clearTimeout(increment);
 };
 
 const currentLevelTimer = (currentLevel) => {

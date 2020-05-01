@@ -1,6 +1,8 @@
 $(()=>{
+    let k=0;
     for (let i=0; i<$('.tips').length;i++){
-        $('.tips').eq(i).on('click', function (){
+        $('.tips-container').eq(i).on('click', function (){
+            // console.log(increment);
             playTipsAudio();
             stopTimer();
             let message = '';
@@ -52,7 +54,6 @@ $(()=>{
                 closeAlert();
                 runTimer();
                 $('#modal-close').unbind();
-                
             });
             
         });
