@@ -1,4 +1,4 @@
- # Brain Out - Cards
+# Brain Out - Cards
  
 ## Game Descriptions
 A gauntlet of card puzzles that involve interactions with cards. Players have to complete tasks like clicking on the highest valued card, or move a bunch of cards into a box, etc. There are currently 10 levels planned. The game inspiration is coming from a mobile game application named 'Brain Out'. (available both in iOS and Android). 
@@ -36,6 +36,9 @@ My objective is to create a game that is simple but fun. To achieve that i also 
 * The UI is responsive to normal website and mobile potrait mode. 
 * The normal alert from browser is replaced by modal. 
 * Dynamic timer implemented. (different level has different time given).
+
+## Unsolved Problem
+* The timer will be messed out if the user returned from higher level to lower level and pressed the earned tip multiple tips. (the clearInternal or/and clearTimeout are working fine if the users didn't press the same tips for more than 3 times after return from higher level). 
 
 ## Game Instructions
 Clear all 10 levels to win the game. 
