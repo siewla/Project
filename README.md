@@ -27,13 +27,20 @@ A gauntlet of card puzzles that involve interactions with cards. Players have to
 The API is used to randomly pick the cards from the deck. 
 
 ## Approaches Taken
-My objective is to create a game that is simple but fun. To achieve that i also did some research on games within the scope of the unit 1.
+My objective is to create a game that is simple but fun. To achieve that i also did some research on games within the scope of the unit 1. 
+
+## Accomplishments  
+* The cards are randomly generated every time and the logic is working. 
+(To reduce confusion, i avoided using A, J, Q and K). 
+* To reach out to bigger crowds for feedbacks and review, i explored how to convert click to tap on mobile.
+* The UI is responsive to normal website and mobile potrait mode. 
+* The normal alert from browser is replaced by modal. 
+* Dynamic timer implemented. (different level has different time given).
 
 ## Game Instructions
 Clear all 10 levels to win the game. 
 
 ## Additional Features were under Considerations
-- Audio
 - Sign in feature
 - Leaderboard
 - More levels involving rotating the element, pan the image, etc. 
