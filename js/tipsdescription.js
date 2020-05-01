@@ -1,6 +1,7 @@
 $(()=>{
     for (let i=0; i<$('.tips').length;i++){
         $('.tips').eq(i).on('click', function (){
+            playTipsAudio();
             stopTimer();
             let message = '';
             if ($('.active-tips').length >0 || tipsIndex.includes(currentLevel)===true) {

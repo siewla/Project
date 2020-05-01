@@ -115,6 +115,10 @@ const playWinningAudio = () => {
     $('#winning-audio').trigger('play');
 };
 
+const playTipsAudio = () => {
+    $('#tips-audio').trigger('play');
+};
+
 let fullDeck ='';
 
 $(()=>{
