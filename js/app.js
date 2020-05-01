@@ -92,6 +92,29 @@ const allEqual = (arrOne, arrTwo) => {
     }
 };
 
+const checkAudio = () => {
+    if ($('#audio-button').html()=='On'){
+        $('#audio-button').html('Off').css('background-color','red');
+        $('#background-audio').trigger('pause');
+    } else {
+        $('#audio-button').html('On').css('background-color','green');
+        $('#background-audio').trigger('play');
+    }
+};
+
+
+const playWrongAudio = () => {
+    $('#wrong-audio').trigger('play');
+};
+
+const playCorrectAudio = () => {
+    $('#correct-audio').trigger('play');
+};
+
+const playWinningAudio = () => {
+    $('#winning-audio').trigger('play');
+};
+
 let fullDeck ='';
 
 $(()=>{
@@ -120,7 +143,11 @@ $(()=>{
     promiseDeck();
     level0();
     activateResetButton();
-    
+
+    $('#audio-button').on('click', function (){
+        checkAudio();
+    });
+
     $('.timer').css('display','none');
 
     $('#info').on('click', function (){

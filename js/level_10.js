@@ -27,6 +27,7 @@ const level10 = () => {
         e.preventDefault();
         let answer = $('#cardcode10').val();
         if (answer === cardCode[0]){
+            playWinningAudio();
             $('#modal-content').html('<p>Bravo. </p> <p> You completed 10 Levels. </p>');
             stopTimer();
             restartGame();

@@ -62,6 +62,7 @@ const setLosingAlertMessage = () => {
 };
 
 const showWinningAlert = () => {
+    playCorrectAudio();
     stopTimer();
     setWinningAlertMessage();
     displayAlert();
@@ -73,6 +74,7 @@ const showWinningAlert = () => {
 };
 
 const showLosingAlert = () => {
+    playWrongAudio();
     stopTimer();
     if (checkLives()){
         setLosingAlertMessage();

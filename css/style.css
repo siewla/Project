@@ -180,42 +180,39 @@
 }
 
 .side-buttons{
-  margin-top: 10vh;
   margin-left: 2vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   font-family: 'Luckiest Guy', cursive;
+  /* border:1px solid black; */
 }
-#toggle-audio{
+
+
+.side-button-style{
   color:wheat;
   border-radius: 30%;
-  background-color: green;
-  font-size: 4vh;
-  height: 5vh;
   width: 5vh;
   line-height: 5vh;
-  margin-bottom: 5vh;
+  margin-bottom: -1.5vh;
+}
 
+.side-button-text{
+  text-align: center;
+  width:5vh;
+  font-size: 1.5vh;
 }
 
 #reset-level{
-  color:wheat;
-  border-radius: 30%;
-  background-color: #CC3300;
-  vertical-align: center;
-  text-align: center;
   font-size: 5vh;
-  height: 5vh;
-  width: 5vh;
-  line-height: 5vh;
+  background-color: green;
 }
 
-#replay{
-  text-align: center;
-  font-size:2vh;
-  width:5vh;
+#audio-button{
+  font-size: 2vh;
+  background-color: red;
 }
+
 
 .level-container{
   height: 60vh;
@@ -824,17 +821,22 @@
 }
 
 
-#reset-level{
-  font-size: 3vh;
-  height: 3vh;
+.side-button-style{
   width: 3vh;
   line-height: 3vh;
 }
 
-#replay{
-  text-align: center;
-  font-size:1vh;
+.side-button-text{
   width:3vh;
+  font-size: 1vh;
+}
+
+#reset-level{
+  font-size: 2vh;
+}
+
+#audio-button{
+  font-size: 1vh;
 }
 
 }

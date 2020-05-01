@@ -98,8 +98,17 @@
             </footer>
         </div>
         <div class ="side-buttons">
-            <button id ="reset-level">&#x21BA;</button>
-            <h3 id ="replay">Replay<br>Level</h3>
+            <div class ="audio-container">
+                <button class="side-button-style" id = "audio-button">off</button>
+                <h3 class="side-button-text" id = "music">Music</h3>
+                <audio id = "background-audio" loop>
+                    <source src = "music/funday.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class = "replay-container">
+                <button class="side-button-style" id ="reset-level">&#x21BA;</button>
+                <h3 class="side-button-text" id ="replay">Replay</h3>
+            </div>
         </div>   
     <div id="modal">
         <div id="modal-textbox">
@@ -113,6 +122,17 @@
                 <button class="modal-buttons" id="modal-close" href="#">Ok</button>
             </div>
         </div>
+    </div>
+    <div class = "all-audio">
+        <audio id = "wrong-audio">
+            <source src = "music/wrong.mp3" type="audio/mpeg">
+        </audio>
+        <audio id = "correct-audio">
+            <source src = "music/right.mp3" type="audio/mpeg">
+        </audio>  
+        <audio id = "winning-audio">
+            <source src = "music/applause.mp3" type="audio/mpeg">
+        </audio>
     </div>
     <div id="about-modal">
         <div id="about-textbox">
