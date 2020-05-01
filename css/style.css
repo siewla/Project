@@ -601,15 +601,15 @@
 @media only screen and (max-width: 600px) {
 
 .main-game{
-  width:40vh;
+  width:35vh;
 }
 
 .level-title{
-  font-size: 1vh;
+  font-size: .75vh;
 }
 
 .level-description{
-  max-width: 40vh;
+  max-width: 35vh;
   font-size: 2vh;
 }
 
@@ -617,10 +617,13 @@
   font-size: 2vh;
 }
 
+
+
+
 /* Level 0 */
 .level-0 {
-  height: 40vh;
-  width: 40vh;
+  height: 35vh;
+  width: 35vh;
 }
 
 #start-game-title{
@@ -653,8 +656,12 @@
   max-width:5vh;
 }
 
+#info{
+  font-size: 1vh;
+}
+
 .tips-main, .lives-main{
-  width: 15vh;
+  width: 12vh;
   margin-left: 3vh;
 }
   
@@ -664,20 +671,20 @@
 }
   
 .tips, .lives{  
-  width: 3vh;
-  height: 3vh;
+  width: 2.5vh;
+  height: 2.5vh;
   padding: 0.1vh;
 }
   
 .level{
   padding:10px;
   margin-bottom: 5vh;
-  height: 40vh;
+  height: 35vh;
 }
   
 .level-container{
-  height: 40vh;
-  width: 40vh;
+  height: 35vh;
+  width: 35vh;
 }
   
 /* level-1 */
@@ -686,15 +693,15 @@
 }
     
 #A {      
-  max-height: 19vh;
+  max-height: 17vh;
 }
   
 #B {
-  max-height: 21vh;
+  max-height: 19vh;
 }
   
 #C {
-  max-height: 18vh;
+  max-height: 14vh;
 }
   
 #D {      
@@ -704,13 +711,13 @@
 /* level-2 */
 
 .level2-img {
-  max-height: 15vh;
+  max-height: 10vh;
 }
   
 /* level-3 */
 .level3-img, .level5-img{
   margin: 1vh;
-  max-width: 8vh;
+  max-width: 7vh;
 }
   
 /* level-4 */
@@ -726,7 +733,7 @@
   
 /* level-6 */
 .level6-img, .level6-dropzone{    
-  max-height: 16vh;
+  max-height: 14vh;
 }
 
 /* level -7 */
@@ -776,7 +783,7 @@
 
 .timer {
   height: 4vh;
-  width: 40vh;
+  width: 35vh;
 }
   
 #timer-title, #time-left {
