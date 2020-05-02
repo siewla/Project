@@ -93,7 +93,6 @@ const showTimeOut = () => {
     }
     $('#modal-close').on('click', () => {
         closeAlert();
-        
         $('#time-left').html('0s');
         if (currentLevel !==0){
             changeLevel(currentLevel,currentLevel);
