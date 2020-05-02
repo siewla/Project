@@ -51,20 +51,9 @@ $(()=>{
             $('#modal-close').on('click', () => {
                 closeAlert();
                 runTimer();
-                $('#modal-close').unbind();
+                $('#modal-close').unbind('click');
             });
             
         });
     }
-
-    // $('#ccButton').on('click', function (e) {
-    //     e.preventDefault();
-    //     switch($('#cheat-code').val()){
-    //     case 'all':
-    //         $('.level-button').prop('disabled',false);
-    //         break;
-    //     default:
-    //     }
-
-    // });
 });

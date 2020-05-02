@@ -49,7 +49,7 @@ const displayNoneLevel = (level) => {
 
 const changeLevel = (currentLevel, nextLevel) => {
     displayNoneLevel(currentLevel);
-    $('.game').empty();
+    $('.game').children().remove();
     displayLevel(nextLevel);
     currentLevel = nextLevel;
     activateLevelButton(currentLevel);
@@ -175,7 +175,7 @@ $(()=>{
 
     for (let i=0; i<$('.level-button').length; i++){
         $('.level-button').eq(i).on('click', function (){
-            $('.game').empty();
+            $('.game').children().remove();
             
             changeLevel(currentLevel,i+1);
             currentLevel= i+1;

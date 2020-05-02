@@ -5,6 +5,7 @@ const runTimer = () => {
 
 const decrement = () => {
     timeLeft --;
+    // console.log(timeLeft);
     $('#time-left').html(`${timeLeft}s`);
     let progressBarWidth = timeLeft * $('#time-bar').width() / timeTotal;
     $('#time-bar').find('div').animate({ width: progressBarWidth }, timeLeft == timeTotal ? 0 : 1000, 'linear');
