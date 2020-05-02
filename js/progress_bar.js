@@ -9,8 +9,8 @@ const decrement = () => {
     let progressBarWidth = timeLeft * $('#time-bar').width() / timeTotal;
     $('#time-bar').find('div').animate({ width: progressBarWidth }, timeLeft == timeTotal ? 0 : 1000, 'linear');
     if (timeLeft === 0){
-        stopTimer();
         showTimeOut();
+        stopTimer();
     }
 };
 
@@ -22,8 +22,8 @@ const resetTimer = (timeGiven) => {
 
 
 const stopTimer = () =>{
-    // clearInterval(increment);
-    clearTimeout(increment);
+    clearInterval(increment);
+    //clearTimeout(increment);
 };
 
 const currentLevelTimer = (currentLevel) => {
