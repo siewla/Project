@@ -19,6 +19,9 @@ A gauntlet of card puzzles that involve interactions with cards. Players have to
  <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe5.png" width="500px"/>
 </td></tr></table>
 <table><tr><td>
+ <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe7.png" width="500px"/>
+</td></tr></table>
+<table><tr><td>
  <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe6.png" width="500px"/>
 </td></tr></table>
 
@@ -37,8 +40,10 @@ My objective is to create a game that is simple but fun. To achieve that i also 
 * The normal alert from browser is replaced by modal. 
 * Dynamic timer implemented. (different level has different time given).
 
-## Unsolved Problem
-* The timer will be messed out if the user returned from higher level to lower level and pressed the earned tip multiple times. (the clearInternal or/and clearTimeout are working fine if the users didn't press the same tips for more than 3 times after return from higher level). 
+## Difficulties Faced
+* The timer was messed out, as the timer tended to move faster after clicking the same event handler more than one time. Solution : unbind() all the event handlers after calling like close button. 
+* The code are getting lengthier and harder to interpret. 
+Solution : refactor and seperating the .js files (one level one .js file for better code debugging). 
 
 ## Game Instructions
 Clear all 10 levels to win the game. 
@@ -47,4 +52,7 @@ Clear all 10 levels to win the game.
 - Sign in feature
 - Leaderboard
 - More levels involving rotating the element, pan the image, etc. 
+
+## Credits
+- all the alpha trial users (the feedbacks helped me to improve on my UI a lot). 
 
