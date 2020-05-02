@@ -18,5 +18,10 @@ const createGameLevel = (level,levelDescription) => {
     $timerBarDiv.appendTo($timerBar);    
     $timeLeft.attr('id','time-left').appendTo($timerContainer);
     $levelContainer.addClass('level-container').attr('id',`level-${level}`).appendTo($mainLeveldiv);
+
+    stopTimer();
+    $('.timer').css('display','flex');
+    resetTimer(currentLevelTimer(level));
+    runTimer();
 };
 

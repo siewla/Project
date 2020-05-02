@@ -53,10 +53,10 @@ const changeLevel = (currentLevel, nextLevel) => {
     displayLevel(nextLevel);
     currentLevel = nextLevel;
     activateLevelButton(currentLevel);
-    stopTimer();
+    // stopTimer();
     $('.timer').css('display','flex');
     resetTimer(currentLevelTimer(currentLevel));
-    runTimer();
+    // runTimer();
 };
 
 const activateLevelButton = (currentLevel) =>{
