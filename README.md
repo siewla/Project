@@ -38,7 +38,7 @@ My objective is to create a game that is simple but fun. To achieve that i also 
 * Dynamic timer implemented. (different level has different time given).
 
 ## Unsolved Problem
-* The timer will be messed out if the user returned from higher level to lower level and pressed the earned tip multiple tips. (the clearInternal or/and clearTimeout are working fine if the users didn't press the same tips for more than 3 times after return from higher level). 
+* The timer will be messed out if the user returned from higher level to lower level and pressed the earned tip multiple times. (the clearInternal or/and clearTimeout are working fine if the users didn't press the same tips for more than 3 times after return from higher level). 
 
 ## Game Instructions
 Clear all 10 levels to win the game. 
