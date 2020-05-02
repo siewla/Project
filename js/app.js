@@ -2,8 +2,8 @@ let currentLevel=0;
 let remainingTips=5;
 let remainingLives=5;
 let tipsIndex = [];
-let timeLeft = 15;
-let timeTotal = 15;
+let timeLeft = -1;
+let timeTotal = 1;
 let increment;
 
 const displayLevel = (level) => {
@@ -54,8 +54,8 @@ const changeLevel = (currentLevel, nextLevel) => {
     currentLevel = nextLevel;
     activateLevelButton(currentLevel);
     // stopTimer();
-    $('.timer').css('display','flex');
-    resetTimer(currentLevelTimer(currentLevel));
+    //$('.timer').css('display','flex');
+    // resetTimer(currentLevelTimer(currentLevel));
     // runTimer();
 };
 

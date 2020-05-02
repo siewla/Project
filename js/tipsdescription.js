@@ -1,8 +1,6 @@
 $(()=>{
-    let k=0;
     for (let i=0; i<$('.tips').length;i++){
-        $('.tips-container').eq(i).on('click', function (){
-            // console.log(increment);
+        $('.tips-container').eq(i).on('click', function (){    
             playTipsAudio();
             stopTimer();
             let message = '';
