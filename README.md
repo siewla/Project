@@ -1,18 +1,18 @@
 # Brain Out - Cards
  
 ## Game Descriptions
-A gauntlet of card puzzles that involve interactions with cards. Players have to complete tasks like clicking on the highest valued card, or move a bunch of cards into a box, etc. There are currently 10 levels planned. The game inspiration is coming from a mobile game application named 'Brain Out'. (available both in iOS and Android). 
+A gauntlet of card puzzles that involve interactions with cards. Players have to complete tasks like clicking on the highest valued card, or move a bunch of cards into a box, etc. There are currently 10 levels. The game inspiration is coming from a mobile game application named 'Brain Out'. (available both in iOS and Android). 
 
 ## Game Link
 [https://siewla.github.io/brainout-cards/](https://siewla.github.io/brainout-cards/)
 
 ## Technologies
-* HTML
-* CSS
-* Javascript
-* Jquery 
-* Jquery UI
-* Ajax
+* **HTML**
+* **CSS**
+* **Javascript**
+* **Jquery** is used to manage DOM manipulation 
+* **Jquery UI** is used for draggable and droppable 
+* **Ajax** is used to request and access data from the API library
 
 ## Wireframe design
 <table><tr><td>
@@ -27,10 +27,10 @@ A gauntlet of card puzzles that involve interactions with cards. Players have to
 
 ## API used
 [http://deckofcardsapi.com/](http://deckofcardsapi.com/)
-The API is used to randomly pick the cards from the deck. 
+The **API** is used to randomly pick the cards from the deck. 
 
 ## Approaches Taken
-My objective is to create a game that is simple but fun. To achieve that i also did some research on games within the scope of the unit 1. 
+My **objective** is to create a game that is simple but fun. To achieve that i also did some research on games within the scope of the unit 1. 
 
 ## Accomplishments  
 * The cards are randomly generated every time. 
@@ -46,7 +46,8 @@ My objective is to create a game that is simple but fun. To achieve that i also 
 Solution : refactor and seperating the .js files (one level one .js file for better code debugging). 
 
 ## Game Instructions
-Clear all 10 levels to win the game. 
+* Clear all 10 levels to win the game. 
+* Each new player is given 5 lives and 5 tips. 
 
 ## Additional Features were under Considerations
 - Sign in feature
