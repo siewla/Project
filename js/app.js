@@ -161,6 +161,7 @@ $(()=>{
         displayAbout();
         $('#about-close').on('click', () => {
             closeAbout();
+            $('#about-close').unbind();
             if (currentLevel!==0){
                 runTimer();
             }
