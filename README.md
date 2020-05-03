@@ -24,7 +24,7 @@ My **objective** is to create a game that is simple but fun. To achieve that i a
 ## Accomplishments  
 * The cards are randomly generated every time. 
 (To reduce confusion, i avoided using A, J, Q and K). 
-* To reach out to bigger crowds for feedbacks and review, i explored how to convert click to tap on mobile.
+* To reach out to bigger crowds for feedbacks and reviews, i explored how to convert click to tap on mobile.
 * The UI is responsive to normal website and mobile potrait mode. 
 * The normal alert from browser is replaced by modal. 
 * Dynamic timer implemented. (different level has different time given).
