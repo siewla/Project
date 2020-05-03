@@ -39,24 +39,24 @@ Solution : refactor and seperating the .js files (one level one .js file for bet
 * Each new player is given 5 lives and 5 tips. 
 
 ## Wireframe Design and User Stories
-## Wireframe design
-The user will see the front page of the game as per below. There is about button for user to understand the rules. However, without the guide from about, the users shall still able to get started.  
+
+1. The user will see the front page of the game as per below. There is about button for user to understand the rules. However, without the guide from about, the users shall still able to get started.  
 <table><tr><td>
  <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe1.png" width="500px"/>
 </td></tr></table>
-After user manage to clear level-0 (starting page), user will be directed to level-1, the button will turn green and the timer will start running.  
+2. After user manage to clear level-0 (starting page), user will be directed to level-1, the button will turn green and the timer will start running.  
 <table><tr><td>
  <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe2.png" width="500px"/>
 </td></tr></table>
-When user click/tap the tips, the tips will be popped out (alert). The timer will pause and resume after the user close the alert.
+3. When user click/tap the tips, the tips will be popped out (alert). The timer will pause and resume after the user close the alert.
 <table><tr><td>
  <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe3.png" width="500px"/>
 </td></tr></table>
-When timeout, a alert will be popped out user's lives will be deducted. After user close the alert, the game restart at the level. 
+4. When timeout, a alert will be popped out user's lives will be deducted. After user close the alert, the game restart at the level. 
 <table><tr><td>
  <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe4.png" width="500px"/>
 </td></tr></table>
-When user clear the level, the subsequent level will turn green and previous level button will have opacity, yet the user is able to return to the previous level by pressing the level button. 
+5. When user clear the level, the subsequent level will turn green and previous level button will have opacity, yet the user is able to return to the previous level by pressing the level button. 
 <table><tr><td>
  <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe5.png" width="500px"/>
 </td></tr></table>
