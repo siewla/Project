@@ -104,18 +104,22 @@ const checkAudio = () => {
 
 
 const playWrongAudio = () => {
+    $('#wrong-audio').prop('volume', 0.1);
     $('#wrong-audio').trigger('play');
 };
 
 const playCorrectAudio = () => {
+    $('#correct-audio').prop('volume', 0.1);
     $('#correct-audio').trigger('play');
 };
 
 const playWinningAudio = () => {
+    $('#winning-audio').prop('volume', 0.1);
     $('#winning-audio').trigger('play');
 };
 
 const playTipsAudio = () => {
+    $('#tips-audio').prop('volume', 0.1);
     $('#tips-audio').trigger('play');
 };
 
