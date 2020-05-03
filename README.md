@@ -14,17 +14,6 @@ A gauntlet of card puzzles that involve interactions with cards. Players have to
 * **Jquery UI** is used for draggable and droppable 
 * **Ajax** is used to request and access data from the API library
 
-## Wireframe design
-<table><tr><td>
- <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe5.png" width="500px"/>
-</td></tr></table>
-<table><tr><td>
- <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe7.png" width="500px"/>
-</td></tr></table>
-<table><tr><td>
- <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe6.png" width="500px"/>
-</td></tr></table>
-
 ## API used
 [http://deckofcardsapi.com/](http://deckofcardsapi.com/)
 The **API** is used to randomly pick the cards from the deck. 
@@ -49,6 +38,30 @@ Solution : refactor and seperating the .js files (one level one .js file for bet
 * Clear all 10 levels to win the game. 
 * Each new player is given 5 lives and 5 tips. 
 
+## Wireframe Design and User Stories
+## Wireframe design
+The user will see the front page of the game as per below. There is about button for user to understand the rules. However, without the guide from about, the users shall still able to get started.  
+<table><tr><td>
+ <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe1.png" width="500px"/>
+</td></tr></table>
+After user manage to clear level-0 (starting page), user will be directed to level-1, the button will turn green and the timer will start running.  
+<table><tr><td>
+ <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe2.png" width="500px"/>
+</td></tr></table>
+When user click/tap the tips, the tips will be popped out (alert). The timer will pause and resume after the user close the alert.
+<table><tr><td>
+ <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe3.png" width="500px"/>
+</td></tr></table>
+When timeout, a alert will be popped out user's lives will be deducted. After user close the alert, the game restart at the level. 
+<table><tr><td>
+ <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe4.png" width="500px"/>
+</td></tr></table>
+When user clear the level, the subsequent level will turn green and previous level button will have opacity, yet the user is able to return to the previous level by pressing the level button. 
+<table><tr><td>
+ <img src="https://github.com/siewla/brainout-cards/blob/master/img/wireframe5.png" width="500px"/>
+</td></tr></table>
+
+
 ## Additional Features were under Considerations
 - Sign in feature
 - Leaderboard
@@ -56,4 +69,5 @@ Solution : refactor and seperating the .js files (one level one .js file for bet
 
 ## Credits
 - all the alpha trial users (the feedbacks helped me to improve on my UI a lot). 
+
 
