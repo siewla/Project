@@ -32,7 +32,7 @@
 ## Code and Code Design
 
 ### What in my code and program design in the project would I do differently next time?
-- To use class or prototype, this seems to be more structured than my current code even though I have made it modular by levels, it is not fully refactored. I wrote like to make my html code modular as well, but I not sure how that possible. 
+- To use class or prototype, this seems to be more structured than my current code even though I have made it modular by levels, it is not fully refactored. I would like to make my html code modular as well, but I not sure how that possible. 
 
 ### What in my code and program design in the project went well? Is there anything I would do the same next time?’
 - Modular the files, as this helps in term of debugging.
