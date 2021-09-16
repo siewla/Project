@@ -46,4 +46,4 @@
 - Refactor, I think I shall improve on the refactoring the codes using class or prototype. 
 
 **3.	How is the overall level of the course during this unit? (instruction, course materials, etc.)**
-- The course materials and instructions in Unit are fine overall for all. However, the homework though reviewed, same as the other classmates, I do hope there would be sample solution posted maybe 1 week after submission.  
+- The course materials and instructions in Unit are fine overall for all.
